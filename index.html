@@ -68,9 +68,31 @@
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 R102 Gaming - Projet réalisé par Ombeline, Ewan et Nina</p>
-        </div>
+        <form id="form" action="mailto:my@email?content-type=text/html&amp;subject=Site%20Web" method="post" enctype="text/plain">
+            <p>
+                <label for="clair_obscure"">
+                    Clair Obscure
+                    <input id="clair_obscure" type="radio" name="jeu_favori" value="clair_obscure">
+                </label> <br>
+                <label for="field_of_mistria">
+                    Field Of Mistria
+                    <input id="field_of_mistria" type="radio" name="jeu_favori" value="field_of_mistria">
+                </label> <br>
+                <label for="prenom">
+                    Prenom ou nom d'utilisateur
+                    <input id="prenom" type="text" name="prenom" value=" ">
+                </label> <br>
+                <label for="eleve_favori">
+                    Qui souhaitez-vous contactez?
+                    <input id="" type="" name="" value="">
+                </label> <br> <!--celui là est pas bon, je sais faut que je regarde comment faire un menu déroulant-->
+                <label for="message">
+                    Votre Message
+                    <input id="message" type="text" name="message" value=" ">
+                </label> <br>
+                <input type="submit" value="Envoyer">
+            </p>
+        </form>
     </footer>
 </body>
 </html>

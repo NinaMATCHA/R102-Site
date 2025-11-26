@@ -1,37 +1,35 @@
 * {
-  margin: 0;
+  margin: 0; 
   padding: 0;
 } /* selecteur universel, sans ceci on avait deux-trois éléments qui avait une mise en page un peu étrange.*/
 
 html {
 	background-color: #f8e5b6;
-}
+} /*couleur de fond de page, à changer*/
 
 body {
-	display: flexbox;
-	column-gap: 3em; /*pour que les colonnes ne soient pas collés*/
+	display: flexbox; /*type de display, le truc des grenouilles*/
 }
 
 nav{
-	background: #1d0f21;
+	background: #1d0f21; /*couleur de fond du bandeau de naviguation*/
 }
 
 nav ul{
-	display: flex;
+	display: flex; /*pour que les éléments li se mettent correctement en page*/
 }
 
 nav li{
 	display: inline-flex;
-	justify-content: space-around;
-	align-items: center;
-	padding-top: 8px;
-	float: left;
+	justify-content: space-around; 
+	padding-top: 0.2em;
+	padding-bottom: 0.2em; /*padding défini la largeur du bandeau hors texte*/
 	width: 20%;
-	text-align: center;
 }
 
 nav a{
 	display: inline-block;
+	text-align: center;
 	text-decoration: none;
 	color: #969eea;
 }
@@ -56,24 +54,12 @@ img:hover {
 	width: 93%;
 } /*image s'aggrandit quand on passe la souris dessus*/
 
-.decoration {
-	grid-column: 3;
-	grid-row: 1/4; /*pour que l'image ne change pas ma mise en forme en aggrandissant une 'row'*/
-	width: 93%;
-	height: auto; /*évite les déformations*/
-	margin-top: 30%;
-	padding: 1%;
-	background: #4f2009;
-	border-radius: 20em 20em 0em 0em; /*forme arondie on peut effet 'fenêtre'*/
-	border: 0.5em double #7fb78e; /*pour rendre le contour plus élégant*/
-}
-
 img {
-	width: 50%;
+	width: 50%; /*taille de l'image*/
 	position: center;
 	height: auto; /*pour éviter les déformations*/
 	border-radius: 1em; 
-	border: 0.5em double #7fb78e;
+	border: 0.5em double #7fb78e; /*border ça défini la bordure*/
 	margin-bottom: 0.5em;
 }
 
@@ -119,59 +105,21 @@ a:hover {
 	background: rgba(127, 183, 142,0.40);
 } /*change la couleur de fond lorque la souris passe dessus*/
 
-#liste>li {
-	margin-left: 10%; /*Lorsque j'ajouterais des images, je pense que je calerais cette liste à côté d'une d'entre elle.*/
-	padding: 5px;
-} /* Je pourrais changer l'id en classe si jamais j'ai d'autres listes plus tard.*/
-
-ol>li {
-	margin-left: 4%;
-	margin-right: 50%; /*Je veux que la liste retourne à la ligne passé un certain point, ce point n'est pas atteint pour l'instant mais si j'ajoute des articles qui sont plus longs, ça pourrait.*/
-	padding: 5px;
-	text-align:left;
-}
-
-table {
-	background: rgba(79, 32, 9,0.80);
-	width: 50%; /*je ne veux pas que mon tableau soit sur toute la colonne*/
-	text-align: center;
-	border: 1px solid #4f2009;
-	margin-left: 4%;
-	margin-bottom: 1em;
-	box-shadow: 5px 10px 25px rgba(50, 0, 0, 0.2); /*pour faire joli*/
-}
-
-th {
-	background: rgba(127, 183, 142,0.75); /*couleur cellule d'entête du tableau*/
-}
-
-th, td {
-	color: #4f2009; /*couleur du texte*/
-	font-family: "Helvetica", sans-serif;
-	padding: 0.3em; 
-	font-size: 1.8em;
-}
-
-tr:nth-child(even) {
-	background-color: rgba(248, 229, 182,0.85);
-}
-
-tr:nth-child(odd) { 
-	background-color: rgba(248, 229, 182,0.65);
-} /* lignes 169 à 175 sont pas super importantes vu qu'il n'y a que 2 lignes au tableau, mais c'est une aide à la lecture.*/
-
 footer {
 	background: #4faaa9;
 	padding: 4em; /*pour ne pas avoir les éléments coller aux bord du footer*/
 	margin-top: 5em;
-  display : inline-flex;
+  display : flex-inline;
 }
 
 footer>section {
-  display: flex-inline;  
-	color: #7fb78e; /*besoin de changer les couleurs vu que le font est foncé*/
-	font-size: 1.8em;
+  display : flex-inline;
+  color: #7fb78e; 
 	text-align: center;
+}
+footer>section>p {
+  
+  font-size: 1em;
 }
 
 video {

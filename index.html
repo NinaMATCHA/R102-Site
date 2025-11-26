@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fr">
     <head>
         <title>Accueil R102</title>
@@ -9,24 +10,25 @@
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li> 
-                        <a href="./index.html">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="#form">Formulaire</a>
-                    </li>
-                    <li>
-                        <a href="./field_of_mistria.html">Field of Mistria</a>
-                    </li>
-                    <li>
-                        <a href="./clair_obscure.html">Clair Obscure</a>
-                    </li>
-                </ul>
-            </nav>
+            <h1>Accueil</h1>
         </header>
-        <body>
+        <nav>
+            <ul>
+                <li> 
+                    <a href="./index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="#form">Formulaire</a>
+                </li>
+                <li>
+                    <a href="./field_of_mistria.html">Field of Mistria</a>
+                </li>
+                <li>
+                    <a href="./clair_obscure.html">Clair Obscure</a>
+                </li>
+            </ul>
+        </nav>
+        <section>
             <div>
                 <a href=""> changer de thème</a> 
             </div>
@@ -38,42 +40,49 @@
                 <li><a href="image ancre field of mistria">Mistria</a></li>
                 <li><a href="image ancre clair obscure">ClairObscure</a></li>
             </ul>
-            
-        </body>      
+        </section>
+        <section>
+            <h2> Le VS </h2>
+        </section>
+        <section>
+            <h2>Sources</h2>
+        </section>
         <footer>
-            <h3>
-                Mentions légales
-            </h3>
-            <p>
-                Le site web apartient à Nina MATIC CHARBIT, Ewan FRANCOIS et Ombeline CHAUD.
-                Ce site est réalisé dans le cadre de nos études.
-            </p>
-            <form id="form" action="mailto:my@email?content-type=text/html&amp;subject=Site%20Web" method="post" enctype="text/plain">
+            <section>
+                <h3>Mentions légales</h3>
                 <p>
-                    <span>Quel est votre jeu préféré?</span>
-                    <label for="clair_obscure"">
-                        Clair Obscure
-                        <input id="clair_obscure" type="radio" name="jeu_favori" value="clair_obscure">
-                    </label> <br>
-                    <label for="field_of_mistria">
-                        Field Of Mistria
-                        <input id="field_of_mistria" type="radio" name="jeu_favori" value="field_of_mistria">
-                    </label> <br>
-                    <label for="prenom">
-                        Prenom ou nom d'utilisateur
-                        <input id="prenom" type="text" name="prenom" value=" ">
-                    </label> <br>
-                    <label for="eleve_favori">
-                        Qui souhaitez-vous contactez?
-                        <input id="" type="" name="" value="">
-                    </label> <br> <!--celui là est pas bon, je sais faut que je regarde comment faire un menu déroulant-->
-                    <label for="message">
-                        Votre Message
-                        <textarea name="message" rows="5" cols="30">...</textarea>
-                    </label> <br>
-                    <input type="submit" value="Envoyer">
+                    Le site web apartient à Nina MATIC CHARBIT, Ewan FRANCOIS et Ombeline CHAUD.
+                    Ce site est réalisé dans le cadre de nos études.
                 </p>
-            </form>
+            </section>
+            <section>
+                <form id="form" action="mailto:my@email?content-type=text/html&amp;subject=Site%20Web" method="post" enctype="text/plain">
+                    <p>
+                        <span>Quel est votre jeu préféré?</span>
+                        <label for="clair_obscure"">
+                            Clair Obscure
+                            <input id="clair_obscure" type="radio" name="jeu_favori" value="clair_obscure">
+                        </label> <br>
+                        <label for="field_of_mistria">
+                            Field Of Mistria
+                            <input id="field_of_mistria" type="radio" name="jeu_favori" value="field_of_mistria">
+                        </label> <br>
+                        <label for="prenom">
+                            Prenom ou nom d'utilisateur
+                            <input id="prenom" type="text" name="prenom" value=" ">
+                        </label> <br>
+                        <label for="eleve_favori">
+                            Qui souhaitez-vous contactez?
+                            <input id="" type="" name="" value="">
+                        </label> <br> <!--celui là est pas bon, je sais faut que je regarde comment faire un menu déroulant-->
+                        <label for="message">
+                            Votre Message
+                            <textarea name="message" rows="5" cols="30">...</textarea>
+                        </label> <br>
+                        <input type="submit" value="Envoyer">
+                    </p>
+                </form>
+            </section>
         </footer>
     </body>
 </html>

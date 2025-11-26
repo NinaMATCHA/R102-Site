@@ -1,33 +1,29 @@
-//Attention pas fonctionnel avec l'agencement actuel de nos pages html. Changez les couleurs mais pour l'instant pas le code
+* {
+  margin: 0;
+  padding: 0;
+} /* selecteur universel, sans ceci on avait deux-trois éléments qui avait une mise en page un peu étrange.*/
 
 html {
 	background-color: #f8e5b6;
 }
 
 body {
-	display: grid;
-	grid-template-columns: 1fr 2.8fr 1fr; /*colonne centrale plus grande, les côtés sont décoratifs*/
-	row-gap: 0; /*pour éviter les espaces entre les textes dont je voulais pas*/
+	display: flexbox;
 	column-gap: 3em; /*pour que les colonnes ne soient pas collés*/
 }
 
 nav{
-	width: 100%;
-	margin: 0 auto;
 	background: #1d0f21;
-	position: fixed;
 }
 
 nav ul{
-	list-style-type: none;
 	display: flex;
 }
 
 nav li{
 	display: inline-flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
-	margin: 0;
 	padding-top: 8px;
 	float: left;
 	width: 20%;
@@ -35,15 +31,9 @@ nav li{
 }
 
 nav a{
-	display: block;
+	display: inline-block;
 	text-decoration: none;
 	color: #969eea;
-}
-
-header {
-	grid-column: 2;
-	grid-row: 1;
-	text-align: center;
 }
 
 h1 {
@@ -53,6 +43,7 @@ h1 {
 	font-family: "Helvetica", sans-serif;
 	font-weight: lighter;
 	background: #4f2009;
+  margin: 0.5em;
 	padding-top: 0.5em; 
 	padding-bottom: 0.5em; /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
 	border-radius: 5em 0em 5em 0em; /*défini la courbe de chaque coin*/
@@ -83,13 +74,11 @@ img {
 	height: auto; /*pour éviter les déformations*/
 	border-radius: 1em; 
 	border: 0.5em double #7fb78e;
-	margin-bottom: 5px;
+	margin-bottom: 0.5em;
 }
 
 section {
-	grid-column: 2; 
-	margin: 0;
-	margin-top: 20px; /*je ne veux une marge qu'au dessus dans le cas des sections*/
+	margin-top: 1em; /*je ne veux une marge qu'au dessus dans le cas des sections*/
 }
 
 h2 {
@@ -172,37 +161,17 @@ tr:nth-child(odd) {
 } /* lignes 169 à 175 sont pas super importantes vu qu'il n'y a que 2 lignes au tableau, mais c'est une aide à la lecture.*/
 
 footer {
-	grid-column: 1/4; /*pour que ça prenne tout le bas de la page.*/
-	background: #4f2009;
-	padding: 4em; /*pour que le footer prenne plus de place verticalement, comme sur la plupart des sites*/
+	background: #4faaa9;
+	padding: 4em; /*pour ne pas avoir les éléments coller aux bord du footer*/
 	margin-top: 5em;
-	display: grid; /*j'ai dû définir un grid  l'intérieur du footer pour mettre en place mes éléments <p> et <span> comme je voulais*/
-	grid-template-columns: 3fr 1fr; /*je voulais que <span> prenne moins de place que <p>*/
-	column-gap: 3em;
+  display : inline-flex;
 }
 
-footer>p {
+footer>section {
+  display: flex-inline;  
 	color: #7fb78e; /*besoin de changer les couleurs vu que le font est foncé*/
 	font-size: 1.8em;
 	text-align: center;
-}
-
-footer>p>a {
-	 color: #f8e5b6; /*besoin de changer les couleurs vu que le font est foncé mais le garder différent en tant que lien*/
-}
-
-footer>span>p {
-	color: #7fb78e; /*besoin de changer les couleurs vu que le font est foncé*/
-	text-align: center;
-}
-
-.mention {
-	text-align: center; /*nécessaire pour que le texte ne s'aligne pas à gauche.*/
-	list-style-type: none; /*je ne veux pas de points devant mes éléments de liste*/
-}
-
-.mention>a {
-	 color: #f8e5b6; /*besoin de changer les couleurs vu que le font est foncé mais le garder différent en tant que lien*/
 }
 
 video {

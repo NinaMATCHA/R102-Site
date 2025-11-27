@@ -123,9 +123,9 @@ footer>section>p {
 }
 
 video {
-	width : 96%;
+	width : 90%;
 	height: auto; /*pour que l'image ne se déforme pas*/
-	margin: 2%; /*2% de chaque côté plus les 96% de la vidéo, est tout l'espace de ma colonne est prix en compte.*/
+	margin: 5%; /*2% de chaque côté plus les 96% de la vidéo, est tout l'espace de ma colonne est prix en compte.*/
 }
 
 iframe {

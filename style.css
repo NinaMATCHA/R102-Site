@@ -15,33 +15,33 @@ nav{
 	background: #000000; /*couleur de fond du bandeau de naviguation*/
 }
 
-nav ul{
+nav>ul{
 	display: flex; /*pour que les éléments li se mettent correctement en page*/
 }
 
-nav li{
+nav>ul>li{
 	display: inline-flex;
 	justify-content: space-around; 
-	padding-top: 0.2em;
-	padding-bottom: 0.2em; /*padding défini la largeur du bandeau hors texte*/
-	width: 20%;
+	padding: 0.1em; /*padding défini la largeur du bandeau hors texte*/
+	width: 100%;
 }
 
-nav a{
+nav>ul>li>a{
 	display: inline-block;
 	text-align: center;
+	font-weight: 300;
 	text-decoration: none;
 	color: #ffa348;
-	background: #77767b;
+	/*background: #77767b;*/ /*le background fait pas terrible je trouve*/
+	padding: 0.2em;
 	border-radius: 2em;
 }
 
 .clair_obscur{
-	background-image:
-		url(IMAGES/BackgroundImage.jpeg);
-		background-size: cover;
-		background-position: center;
-		background-attachment: fixed;
+	background-image: url(IMAGES/BackgroundImage.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 .index{
@@ -123,7 +123,6 @@ p, li {
 	text-align: justify;
 	font-size: 1.8em;
 	margin: 0;
-	margin-left: 3%; /*juste pour décaler un peu par rapport aux titres, je trouve ça plus jolie*/
 	margin-right: 3%;
 }
 
@@ -136,7 +135,9 @@ a {
 }
 
 a:hover {
-	background: rgb(36, 31, 49,0.40);
+	background: rgba(191, 191, 247, 0.2);
+	border-radius: 4em; 
+	border-width: 0.3em 0.2em; /*pour que la selection soit arrondie*/
 } /*change la couleur de fond lorque la souris passe dessus*/
 
 ol {
@@ -146,7 +147,6 @@ ol {
 	font-family: "Helvetica", sans-serif;
 	font-weight: lighter;
 	background: rgba(0, 0, 0, 0.5);
-	margin
 	margin: 0.5em;
 	/*padding est pour que le fond ait de l'espace entre le texte et le bord*/
 	 /*défini la courbe de chaque coin*/
@@ -201,3 +201,4 @@ h3 {
 	margin-top: 10px;
 	margin-bottom: 12px;
 }
+

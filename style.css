@@ -4,7 +4,7 @@
 } /* selecteur universel, sans ceci on avait deux-trois éléments qui avait une mise en page un peu étrange.*/
 
 html {
-	background-color: #f8e5b6;
+	background-color: #312c28;
 } /*couleur de fond de page, à changer*/
 
 body {
@@ -12,7 +12,7 @@ body {
 }
 
 nav{
-	background: #1d0f21; /*couleur de fond du bandeau de naviguation*/
+	background: #000000; /*couleur de fond du bandeau de naviguation*/
 }
 
 nav ul{
@@ -31,36 +31,70 @@ nav a{
 	display: inline-block;
 	text-align: center;
 	text-decoration: none;
-	color: #969eea;
+	color: #ffa348;
+	background: #77767b;
+	border-radius: 2em;
+}
+
+.clair_obscur{
+	background-image:
+		url(IMAGES/BackgroundImage.jpeg);
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+}
+
+.index{
+	background-image:
+		url(IMAGES/accueil.jpg);
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+}
+
+.field_of_mistria{
+	background-image:
+		url(IMAGES/field_bg.png);	
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
 }
 
 h1 {
-	Color: #7fb78e;
+	Color: #e0c682;
 	text-align: center;
 	font-size: 2.8em;
 	font-family: "Helvetica", sans-serif;
 	font-weight: lighter;
-	background: #4f2009;
+	background: rgba(0, 0, 0, 0.5);
   margin: 0.5em;
-	padding-top: 0.5em; 
-	padding-bottom: 0.5em; /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
-	border-radius: 5em 0em 5em 0em; /*défini la courbe de chaque coin*/
-	border: 0.2em groove #7fb78e; /*pour rendre le contour plus élégant*/
+	/*padding est pour que le fond ait de l'espace entre le texte et le bord*/
+	 /*défini la courbe de chaque coin*/
+	border: 0.2em; /*pour rendre le contour plus élégant*/
 	border-width: 0.3em 0.2em; /*taille du contour horizontalement et verticalement*/
+	border-radius: 5em;
 	margin-bottom: 5px;
 }
 
-img:hover {
-	width: 93%;
-} /*image s'aggrandit quand on passe la souris dessus*/
-
 img {
-	width: 50%; /*taille de l'image*/
-	position: center;
 	height: auto; /*pour éviter les déformations*/
+	 /*border ça défini la bordure*/
+}
+
+.normal {
+	width: 90%; /*taille de l'image*/
+	margin: 5%;
 	border-radius: 1em; 
-	border: 0.5em double #7fb78e; /*border ça défini la bordure*/
-	margin-bottom: 0.5em;
+	border: 0.5em double #f5c211;
+}
+.titre {
+	width: 40%;
+	margin-left: 30%;
+	margin-top: 10%;
+}
+
+.celine {
+	width: 20%;
 }
 
 section {
@@ -68,23 +102,23 @@ section {
 }
 
 h2 {
-	Color: #7fb78e;
+	Color: #000000;
 	text-align: center;
 	font-size: 2.2em;
 	font-family: "Helvetica", sans-serif;
 	font-weight: lighter;
-	background: #4f2009;
+	background: #ffbe6f;
 	padding-top: 0.2em;
 	padding-bottom: 0.2em; /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
-	border-radius: 4em 0em 4em 0em; 
-	border: 0.2em groove #7fb78e;
+	border-radius: 4em; 
 	border-width: 0.3em 0.2em;
+	margin: 1em;
 	margin-top: 10px;
 	margin-bottom: 12px;
 }
 
 p, li {
-	color: #4f2009;
+	color: #ffffff;
 	font-family: "Helvetica", sans-serif;
 	text-align: justify;
 	font-size: 1.8em;
@@ -98,15 +132,33 @@ p, li {
 } /*ma classe qui mets les mots en gras.*/
 
 a {
-	color: rgb(160,60,50);
+	color: rgb(255, 255, 255);
 }
 
 a:hover {
-	background: rgba(127, 183, 142,0.40);
+	background: rgb(36, 31, 49,0.40);
 } /*change la couleur de fond lorque la souris passe dessus*/
 
+ol {
+	Color: #e0c682;
+	text-align: center;
+	font-size: 2em;
+	font-family: "Helvetica", sans-serif;
+	font-weight: lighter;
+	background: rgba(0, 0, 0, 0.5);
+	margin
+	margin: 0.5em;
+	/*padding est pour que le fond ait de l'espace entre le texte et le bord*/
+	 /*défini la courbe de chaque coin*/
+	border: 0.2em; /*pour rendre le contour plus élégant*/
+	border-width: 0.3em 0.2em; /*taille du contour horizontalement et verticalement*/
+	border-radius: 5em;
+	margin-bottom: 5px;
+	display: inline;
+}
+
 footer {
-	background: #4faaa9;
+	background: #241f31;
 	padding: 4em; /*pour ne pas avoir les éléments coller aux bord du footer*/
 	margin-top: 5em;
   display : flex-inline;
@@ -114,7 +166,7 @@ footer {
 
 footer>section {
   display : flex-inline;
-  color: #7fb78e; 
+  color: #5e5c64; 
 	text-align: center;
 }
 footer>section>p {
@@ -134,3 +186,18 @@ iframe {
 }
 
 /* Pour visualiser durant les changements, https://codepen.io/pen/ */
+h3 {
+	Color: #f5c211;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: "Helvetica", sans-serif;
+	font-weight: lighter;
+	background: #1f1711;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em; /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
+	border-radius: 4em;
+	border-width: 0.3em 0.2em;
+	margin: 5em;
+	margin-top: 10px;
+	margin-bottom: 12px;
+}

@@ -1,0 +1,253 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* selecteur universel, sans ceci on avait deux-trois éléments qui avait une mise en page un peu étrange.*/
+
+html {
+	background-color: #282437;
+}
+
+/*couleur de fond de page, à changer*/
+
+body {
+	display: flexbox;
+	/*type de display, le truc des grenouilles*/
+}
+
+nav {
+	background: #000000;
+	/*couleur de fond du bandeau de naviguation*/
+}
+
+nav>ul {
+	display: flex;
+	/*pour que les éléments li se mettent correctement en page*/
+}
+
+nav>ul>li {
+	display: inline-flex;
+	justify-content: space-around;
+	padding: 0.1em;
+	/*padding défini la largeur du bandeau hors texte*/
+	width: 100%;
+}
+
+nav>ul>li>a {
+	display: inline-block;
+	text-align: center;
+	font-weight: 300;
+	text-decoration: none;
+	color: #ffa348;
+	/*background: #77767b;*/
+	/*le background fait pas terrible je trouve*/
+	padding: 0.2em;
+	border-radius: 2em;
+}
+
+header {
+	display: flex-inline;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.clair_obscur {
+	background-image: url(IMAGES/BackgroundImage.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.index {
+	background-image:
+		url(IMAGES/accueil.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.field_of_mistria {
+	background-image:
+		url(IMAGES/field_bg.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#button {
+	position: fixed;
+	width: 100%;
+	display: flex-inline;
+	align-items: flex-end;
+	justify-content: center;
+	flex-direction: column;
+	/*
+	background: rgba(245, 194, 17, 0.2); 
+	border-radius: 4em; 
+	border-width: 0.3em 0.2em; 
+	*/
+	/*même couleur que la class .normal mais rgb. 
+	Et faudrait plutôt que ce soit individuel sur les boutons mais faut que je fasse l'affichage.*/
+}
+
+h1 {
+	Color: #e0c682;
+	text-align: center;
+	font-size: 2.8em;
+	font-family: "Helvetica", sans-serif;
+	font-weight: lighter;
+	background: rgba(0, 0, 0, 0.5);
+	margin: 0.5em;
+	/*padding est pour que le fond ait de l'espace entre le texte et le bord*/
+	/*défini la courbe de chaque coin*/
+	border: 0.2em;
+	/*pour rendre le contour plus élégant*/
+	border-width: 0.3em 0.2em;
+	/*taille du contour horizontalement et verticalement*/
+	border-radius: 5em;
+	margin-bottom: 5px;
+}
+
+img {
+	height: auto;
+	/*pour éviter les déformations*/
+}
+
+.normal {
+	width: 90%;
+	/*taille de l'image*/
+	margin: 5%;
+	border-radius: 1em;
+	border: 0.5em double #f5c211;
+}
+
+.titre {
+	width: 40%;
+	margin-left: 30%;
+	margin-top: 10%;
+}
+
+.celine {
+	width: 20%;
+}
+
+section {
+	margin-top: 1em;
+	/*je ne veux une marge qu'au dessus dans le cas des sections*/
+}
+
+h2 {
+	Color: #000000;
+	text-align: center;
+	font-size: 2.2em;
+	font-family: "Helvetica", sans-serif;
+	font-weight: lighter;
+	background: #ffbe6f;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	/*padding est pour que le fond ait de l'espace entre le texte et le bord*/
+	border-radius: 4em;
+	border-width: 0.3em 0.2em;
+	margin: 1em;
+	margin-top: 10px;
+	margin-bottom: 12px;
+}
+
+p,
+li {
+	color: #ffffff;
+	font-family: "Helvetica", sans-serif;
+	text-align: justify;
+	font-size: 1.8em;
+	margin: 0;
+	margin-right: 3%;
+}
+
+.gras {
+	font-weight: bold;
+}
+
+/*ma classe qui mets les mots en gras.*/
+
+a {
+	color: rgb(255, 255, 255);
+}
+
+a:hover {
+	background: rgba(191, 191, 247, 0.2);
+	border-radius: 4em;
+	border-width: 0.3em 0.2em;
+	/*pour que la selection soit arrondie*/
+}
+
+/*change la couleur de fond lorque la souris passe dessus*/
+
+ol {
+	Color: #e0c682;
+	text-align: center;
+	font-size: 2em;
+	font-family: "Helvetica", sans-serif;
+	font-weight: lighter;
+	background: rgba(0, 0, 0, 0.5);
+	margin: 0.5em;
+	/*padding est pour que le fond ait de l'espace entre le texte et le bord*/
+	/*défini la courbe de chaque coin*/
+	border: 0.2em;
+	/*pour rendre le contour plus élégant*/
+	border-width: 0.3em 0.2em;
+	/*taille du contour horizontalement et verticalement*/
+	border-radius: 5em;
+	margin-bottom: 5px;
+	display: inline;
+}
+
+footer {
+	background: #9141ac;
+	padding: 4em;
+	/*pour ne pas avoir les éléments coller aux bord du footer*/
+	margin-top: 5em;
+	display: flex-inline;
+}
+
+footer>section {
+	display: flex-inline;
+	color: #241f31;
+	text-align: center;
+}
+
+footer>section>p {
+
+	font-size: 1em;
+}
+
+video {
+	width: 90%;
+	height: auto;
+	/*pour que l'image ne se déforme pas*/
+	margin: 5%;
+	/*2% de chaque côté plus les 96% de la vidéo, est tout l'espace de ma colonne est prix en compte.*/
+}
+
+iframe {
+	width: 720px;
+	height: 405px;
+}
+
+/* Pour visualiser durant les changements, https://codepen.io/pen/ */
+h3 {
+	Color: #f5c211;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: "Helvetica", sans-serif;
+	font-weight: lighter;
+	background: #1f1711;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	/*padding est pour que le fond ait de l'espace entre le texte et le bord*/
+	border-radius: 4em;
+	border-width: 0.3em 0.2em;
+	margin: 5em;
+	margin-top: 10px;
+	margin-bottom: 12px;
+}

@@ -60,6 +60,20 @@ nav>ul>li>a{
 		background-attachment: fixed;
 }
 
+#button{
+	position: fixed;
+	width : 100%;
+	display: flex;
+	align-content: flex-end;
+	flex-direction: column;
+	/*
+	background: rgba(245, 194, 17, 0.2); 
+	border-radius: 4em; 
+	border-width: 0.3em 0.2em; 
+	*/ /*même couleur que la class .normal mais rgb. 
+	Et faudrait plutôt que ce soit individuel sur les boutons mais faut que je fasse l'affichage.*/
+}
+
 h1 {
 	Color: #e0c682;
 	text-align: center;
@@ -67,7 +81,7 @@ h1 {
 	font-family: "Helvetica", sans-serif;
 	font-weight: lighter;
 	background: rgba(0, 0, 0, 0.5);
-  margin: 0.5em;
+	margin: 0.5em;
 	/*padding est pour que le fond ait de l'espace entre le texte et le bord*/
 	 /*défini la courbe de chaque coin*/
 	border: 0.2em; /*pour rendre le contour plus élégant*/
@@ -78,7 +92,6 @@ h1 {
 
 img {
 	height: auto; /*pour éviter les déformations*/
-	 /*border ça défini la bordure*/
 }
 
 .normal {
@@ -161,17 +174,17 @@ footer {
 	background: #241f31;
 	padding: 4em; /*pour ne pas avoir les éléments coller aux bord du footer*/
 	margin-top: 5em;
-  display : flex-inline;
+	display : flex-inline;
 }
 
 footer>section {
-  display : flex-inline;
-  color: #5e5c64; 
+	display : flex-inline;
+	color: #5e5c64; 
 	text-align: center;
 }
 footer>section>p {
   
-  font-size: 1em;
+	font-size: 1em;
 }
 
 video {

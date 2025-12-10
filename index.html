@@ -1,93 +1,117 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <title>Accueil R102</title>
-    <link rel="icon" href="IMAGES/r102jeux.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="">
+    <link rel="icon" href="IMAGES/r102jeux.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="" />
     <link rel="stylesheet" type="text/css" media="all" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <ul>
-            <li>
-                <a href="./index.html">Accueil</a>
-            </li>
-            <li>
-                <a href="#form">Formulaire</a>
-            </li>
-            <li>
-                <a href="./field_of_mistria.html">Field of Mistria</a>
-            </li>
-            <li>
-                <a href="./clair_obscur.html">Clair Obscur</a>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <a href="./index.html">Accueil</a>
+        </li>
+        <li>
+          <a href="#form">Formulaire</a>
+        </li>
+        <li>
+          <a href="./field_of_mistria.html">Field of Mistria</a>
+        </li>
+        <li>
+          <a href="./clair_obscur.html">Clair Obscur</a>
+        </li>
+      </ul>
     </nav>
-    <header class="index">
-        <h1>Accueil</h1>
-        <ul>
-            <li><a href="vs">vs</a></li>
-            <li><a href="image ancre field of mistria">Mistria</a></li>
-            <li><a href="image ancre clair obscure">ClairObscur</a></li>
-        </ul>
-    </header>
     <section id="button">
-        <div>
-            <a id="button_theme" href=""> changer de thème</a>
-        </div>
-        <div>
-            <a id="button_lang" href=""> changer de langue</a>
-        </div>
+      <div>
+        <a id="button_theme" href=""> changer de thème</a>
+      </div>
+      <div>
+        <a id="button_lang" href=""> changer de langue</a>
+      </div>
+    </section>
+    <header class="index">
+      <h1>Accueil</h1>
+      <ul>
+        <li><a href="#vs">vs</a></li>
+        <li><a href="image ancre field of mistria">Mistria</a></li>
+        <li><a href="image ancre clair obscure">ClairObscur</a></li>
+      </ul>
+    </header>
+    <section>
+      <h2 id="vs">Le VS</h2>
+      <p>
+        Nous allons vous présenter sur notre site web deux jeux bien différents
+        entre eux :
+        <span class="gras">Field of Mistria</span> qui est un jeu de simulation
+        d'agriculture et <span class="gras">Clair Obscure</span> qui est un jeu
+        RPG aux combats tour par tour punitif.
+      </p>
     </section>
 
     <section>
-        <h2> Le VS </h2>
-    </section>
-    <section>
-        <h2>Sources</h2>
+      <h2>Sources</h2>
     </section>
     <footer>
-        <section>
-            <h3>Mentions légales</h3>
-            <p>
-                Le site web apartient à Nina MATIC CHARBIT, Ewan FRANCOIS et Ombeline CHAUD.
-                Ce site est réalisé dans le cadre de nos études.
-            </p>
-        </section>
-        <section>
-            <form id="form" action="mailto:my@email?content-type=text/html&amp;subject=Site%20Web" method="post"
-                enctype="text/plain">
-                <p>
-                    <span>Quel est votre jeu préféré?</span>
-                    <label for="clair_obscur">
-                        Clair Obscur
-                        <input id="clair_obscur" type="radio" name="jeu_favori" value="clair_obscure">
-                    </label> <br>
-                    <label for="field_of_mistria">
-                        Field Of Mistria
-                        <input id="field_of_mistria" type="radio" name="jeu_favori" value="field_of_mistria">
-                    </label> <br>
-                    <label for="prenom">
-                        Prenom ou nom d'utilisateur
-                        <input id="prenom" type="text" name="prenom" value=" ">
-                    </label> <br>
-                    <label for="eleve_favori">
-                        Qui souhaitez-vous contactez?
-                        <input id="" type="" name="" value="">
-                    </label> <br>
-                    <!--celui là est pas bon, je sais faut que je regarde comment faire un menu déroulant-->
-                    <label for="message">
-                        Votre Message
-                        <textarea name="message" rows="5" cols="30">...</textarea>
-                    </label> <br>
-                    <input type="submit" value="Envoyer">
-                </p>
-            </form>
-        </section>
+      <section>
+        <h3>Mentions légales</h3>
+        <p>
+          Le site web apartient à Nina MATIC CHARBIT, Ewan FRANCOIS et Ombeline
+          CHAUD. Ce site est réalisé dans le cadre de nos études.
+        </p>
+      </section>
+      <section>
+        <form
+          id="form"
+          action="mailto:my@email?content-type=text/html&amp;subject=Site%20Web"
+          method="post"
+          enctype="text/plain"
+        >
+          <p>
+            <span>Quel est votre jeu préféré?</span>
+            <label for="clair_obscur">
+              Clair Obscur
+              <input
+                id="clair_obscur"
+                type="radio"
+                name="jeu_favori"
+                value="clair_obscure"
+              />
+            </label>
+            <br />
+            <label for="field_of_mistria">
+              Field Of Mistria
+              <input
+                id="field_of_mistria"
+                type="radio"
+                name="jeu_favori"
+                value="field_of_mistria"
+              />
+            </label>
+            <br />
+            <label for="prenom">
+              Prenom ou nom d'utilisateur
+              <input id="prenom" type="text" name="prenom" value=" " />
+            </label>
+            <br />
+            <label for="eleve_favori">
+              Qui souhaitez-vous contactez?
+              <input id="" type="" name="" value="" />
+            </label>
+            <br />
+            <!--celui là est pas bon, je sais faut que je regarde comment faire un menu déroulant-->
+            <label for="message">
+              Votre Message
+              <textarea name="message" rows="5" cols="30">...</textarea>
+            </label>
+            <br />
+            <input type="submit" value="Envoyer" />
+          </p>
+        </form>
+      </section>
     </footer>
-</body>
-
+  </body>
 </html>

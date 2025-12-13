@@ -136,6 +136,7 @@ img {
 
 .carrousel {
   width: 50%; /*pour pas que ce soit toute la largeur de page*/
+  margin: auto; /* pour centrer le caroussel*/
   height: auto;
   overflow: hidden; /*on cache les images qu'on veut pas activement montrer*/
   border-radius: 8em; /*on arrondi les bords*/

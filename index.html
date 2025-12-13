@@ -4,7 +4,7 @@
 		<title>Accueil R102</title>
     	<link rel="icon" href="IMAGES/r102jeux.ico">
     	<meta charset="UTF-8">
-    	<meta name="viewport" content="">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<link rel="stylesheet" type="text/css" media="all" href="style.css">
   	</head>
 
@@ -51,36 +51,37 @@
     	</section>
     	<footer>
       		<section>
-        		<h3>Mentions légales</h3>
+        		<h3>Mentions légales</h3>  <!-- Pour dire à qui appartient le site -->
         		<p>
           			Le site web apartient à Nina MATIC CHARBIT, Ewan FRANCOIS et Ombeline 
 					CHAUD. Ce site est réalisé dans le cadre de nos études.
         		</p>
       		</section>
         	<form id="form" action="mailto:ewan.francois@etu.univ-amu.fr?subject=Formulaire%20Site&body=Bonjour%2C%0A%0A" method="post" enctype="text/plain">
+			<!-- les mails sont envoyés à Ewan -->
 				<p>
 					<span>Quel est votre jeu préféré?</span>
-					<input id="clair_obscur" type="radio" name="jeu_favori" value="clair_obscure">
+					<input id="clair_obscur" type="radio" name="jeu_favori" value="clair_obscure"> <!--une seule valeur de type radio peut être choisie pour un même nom-->
 					<label for="clair_obscur"> Clair Obscur</label>
 					<br>
-					<input id="field_of_mistria" type="radio" name="jeu_favori" value="field_of_mistria">
+					<input id="field_of_mistria" type="radio" name="jeu_favori" value="field_of_mistria"> <!--une seule valeur de type radio peut être choisie pour un même nom-->
 					<label for="field_of_mistria">Field Of Mistria</label>
 					<br>
 					<input id="prenom" type="text">
 					<label for="prenom">Prenom ou nom d'utilisateur</label>
 					<br>
 					<label for="eleve_favori"> Qui souhaitez-vous contactez?</label>
-					<select name="eleve_favori" id="eleve_favori">
-						<option value="" selected="selected">choissisez un élève</option>
+					<select name="eleve_favori" id="eleve_favori"> <!--menu déroulant-->
+						<option value="aucun" selected="selected">je déteste mes élèves</option><!-- valeur choisie par défaut-->
 						<option value="CHAUD">Ombeline CHAUD</option>
 						<option value="EWAN">Ewan FRANCOIS</option>
 						<option value="MATIC">Nina MATIC CHARBIT</option>
 					</select>
 					<br>
-					<textarea id="message" name="message" rows="5" cols="30">...</textarea>
+					<textarea id="message" name="message" rows="5" cols="30">...</textarea> <!--rows et cols définissent la taille-->
 					<label for="message">Votre Message</label>
 					<br>
-					<input type="submit" value="Envoyer">
+					<input type="submit" value="Envoyer">  <!--bouton envoyer -->
 				</p>
         	</form>
     	</footer>

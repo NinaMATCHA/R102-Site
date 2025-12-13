@@ -1,61 +1,51 @@
 <!DOCTYPE html>
-
 <html lang="fr">
     <head>
         <title>Field of Mistria</title>
         <link rel="icon" href="IMAGES/r102jeux.ico">
         <meta charset="UTF-8">
-        <meta name="viewport" content="">
-        <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" media="all" href="style.css">
     </head>
-
     <body>
         <nav>
             <ul>
-                <li> 
-                    <a href="./index.html">Accueil</a>
-                </li>
-                <li>
-                    <a href="#form">Formulaire</a>
-                </li>
-                <li>
-                    <a href="./field_of_mistria.html">Field of Mistria</a>
-                </li>
-                <li>
-                    <a href="./clair_obscur.html">Clair Obscur</a>
-                </li>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="#form">Formulaire</a></li>
+                <li><a href="./field_of_mistria.html">Field of Mistria</a></li>
+                <li><a href="./clair_obscur.html">Clair Obscur</a></li>
             </ul>
         </nav>
-
-        <section id="button">
-            <div>
-                <a id="button_theme" href=""> changer de thème</a> 
-            </div>
-            <div>
-                <a id="button_lang" href=""> changer de langue</a> 
-            </div>
-        </section>
-        
+        <div id="button">
+      		<div><a id="button_theme" href=""> changer de thème</a></div>
+      		<div><a id="button_lang" href=""> changer de langue</a></div>
+    	</div>
         <header class="field_of_mistria">
-            <img class="titre" src="IMAGES/field_logo.webp" alt="Logo Field of Mistria">
-            <ul>
-                <ol><a href="ancre titre1">Titre 1</a></ol>
-                <ol><a href="ancre titre2">Titre 2</a></ol>
-            </ul>
+            <img class="#personnages" src="IMAGES/field_logo.webp" alt="Logo Field of Mistria">
+            <ol>
+                <li><a href="#presentation">Titre 1</a></li>
+                <li><a href="ancre_titre2">Titre 2</a></li>
+            </ol>
             <img class="celine" src="IMAGES/Celine_autumn.webp" alt="Celine">
         </header>
         <section>
+            <h2 id="presentation">Présentation du jeu</h2> <!--Présentation du gameplay ainsi que du jeu-->
+            <h3>Généralités</h3>
             <p>
                 Field of Mistria est un jeu de gestion d'une ferme, dedans on y incarne un aventurier qui répond à la requête d'une petite ville, Mistria. Mistria a récemment été victime d'un tremblement de terre, et a perdu en renommée dans le pays, l'aide reçu par la capitale de ce pays n'était pas assez pour faire les réparations nécessaires et permettre à la ville de se remettre.
             </p>
+            <h3>Notre rôle</h3>
             <p>
                 C'est là qu'intervient notre personnage. La requête de la maire de Mistria étant qu'en échange de nous donner une ferme, on aide les habitants et la ville à doucement se remettre et faire de nouveau briller cette petite ville dans le pays.
             </p>
         </section>
         <section>
+            <h2 id="personnages">Personnages</h2> <!--Présentation du gameplay ainsi que du jeu-->
+            <h3>Impact des personages sur l'histoire</h3>
             <p>
                 Il y a beaucoup de personnage, qui ont tous des dialogues, une histoire et des buts que l'on a l'occasion de découvrir au fur et à mesure. Mistria possède une grande variété de personnalités et de passions, ce qui rend le jeux vivants et bah voilà quoi.
             </p>
+            <h3>Ne sont-ils pas magnifique?</h3>
             <div class="carrousel">
                 <div class="slides">
                     <div class="slide" id="s1"><img src="./IMAGES/Dozy.png" alt=""></div>
@@ -67,41 +57,40 @@
             </div>
         </section>
         <footer>
-            <section>
-                <h3>Mentions légales</h3>
-                <p>
-                    Le site web apartient à Nina MATIC CHARBIT, Ewan FRANCOIS et Ombeline CHAUD.
-                    Ce site est réalisé dans le cadre de nos études.
-                </p>
-            </section>
-            <section>
-                <form id="form" action="mailto:my@email?content-type=text/html&amp;subject=Site%20Web" method="post" enctype="text/plain">
-                    <p>
-                        <span>Quel est votre jeu préféré?</span>
-                        <label for="clair_obscur"">
-                            Clair Obscur
-                            <input id="clair_obscur" type="radio" name="jeu_favori" value="clair_obscure">
-                        </label> <br>
-                        <label for="field_of_mistria">
-                            Field Of Mistria
-                            <input id="field_of_mistria" type="radio" name="jeu_favori" value="field_of_mistria">
-                        </label> <br>
-                        <label for="prenom">
-                            Prenom ou nom d'utilisateur
-                            <input id="prenom" type="text" name="prenom" value=" ">
-                        </label> <br>
-                        <label for="eleve_favori">
-                            Qui souhaitez-vous contactez?
-                            <input id="" type="" name="" value="">
-                        </label> <br> <!--celui là est pas bon, je sais faut que je regarde comment faire un menu déroulant-->
-                        <label for="message">
-                            Votre Message
-                            <textarea name="message" rows="5" cols="30">...</textarea>
-                        </label> <br>
-                        <input type="submit" value="Envoyer">
-                    </p>
-                </form>
-            </section>
-        </footer>
+      		<section>
+        		<h3>Mentions légales</h3>  <!-- Pour dire à qui appartient le site -->
+        		<p>
+          			Le site web apartient à Nina MATIC CHARBIT, Ewan FRANCOIS et Ombeline 
+					CHAUD. Ce site est réalisé dans le cadre de nos études.
+        		</p>
+      		</section>
+        	<form id="form" action="mailto:ewan.francois@etu.univ-amu.fr?subject=Formulaire%20Site&body=Bonjour%2C%0A%0A" method="post" enctype="text/plain">
+			<!-- les mails sont envoyés à Ewan -->
+				<p>
+					<span>Quel est votre jeu préféré?</span>
+					<input id="clair_obscur" type="radio" name="jeu_favori" value="clair_obscure"> <!--une seule valeur de type radio peut être choisie pour un même nom-->
+					<label for="clair_obscur"> Clair Obscur</label>
+					<br>
+					<input id="field_of_mistria" type="radio" name="jeu_favori" value="field_of_mistria"> <!--une seule valeur de type radio peut être choisie pour un même nom-->
+					<label for="field_of_mistria">Field Of Mistria</label>
+					<br>
+					<input id="prenom" type="text">
+					<label for="prenom">Prenom ou nom d'utilisateur</label>
+					<br>
+					<label for="eleve_favori"> Qui souhaitez-vous contactez?</label>
+					<select name="eleve_favori" id="eleve_favori"> <!--menu déroulant-->
+						<option value="aucun" selected="selected">je déteste mes élèves</option><!-- valeur choisie par défaut-->
+						<option value="CHAUD">Ombeline CHAUD</option>
+						<option value="EWAN">Ewan FRANCOIS</option>
+						<option value="MATIC">Nina MATIC CHARBIT</option>
+					</select>
+					<br>
+					<textarea id="message" name="message" rows="5" cols="30">...</textarea> <!--rows et cols définissent la taille-->
+					<label for="message">Votre Message</label>
+					<br>
+					<input type="submit" value="Envoyer">  <!--bouton envoyer -->
+				</p>
+        	</form>
+    	</footer>
     </body>
 </html>

@@ -19,6 +19,27 @@
   --primary-color: var(--primary-color-light);
   --background-color: var(--background-light);
   --text-color: var(--text-light);
+}* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /*thème clair*/
+  --primary-color-light: #f5c211;
+  --background-light: #ffffffff;
+  --text-light: #00000000;
+
+  /*thème obscur*/
+  --primary-color-dark: #282437;
+
+  /* thème sakura*/
+  --primary-color-sakura: #ffb7c5;
+
+  /*defaut*/
+  --primary-color: var(--primary-color-light);
+  --background-color: var(--background-light);
+  --text-color: var(--text-light);
 }
 
 .dark {
@@ -102,6 +123,7 @@ header {
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
+  z-index: 30; /* pour les mettre au dessus de tt*/
   /*
 	background: rgba(245, 194, 17, 0.2); 
 	border-radius: 4em; 
@@ -280,10 +302,390 @@ ol {
   display: inline;
 }
 
+.vs-border {
+  /*ici je permet que les images restent dans leur position par rapport a leur encadrement que j'ai appelé versus*/
+  position: relative;
+  width: 100%;
+  height: 40em;
+  /*pour pas que le hover depasse en dehors du cadre*/
+  overflow: hidden; 
+  border-radius: 4em;
+}
+
+.vs-border img {
+  /*ici c'est pour que les images soient l'une par dessus l'autre a leur position 0*/
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*pour mettre les img même forme que sur la maquette + agrandir l'img qui a la souris dessus*/
+.left {
+  /*pour rogner l'image selon un polynome :
+haut-gauche, haut-droite, bas-droite, bas-gauche*/
+  clip-path: polygon(0 0, 50% 0, 30% 100%, 0 100%);
+}
+
+.left:hover {
+  clip-path: polygon(0 0, 80% 0, 70% 100%, 0 100%);
+  z-index: 20; /*met l'image au dessus de l'autre (axe z)*/
+  transform: scale(1.1); /*effet de zoom*/
+}
+
+.right {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 30% 100%);
+}
+
+.right:hover {
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 20% 100%);
+  z-index: 20;
+  transform: scale(1.1);
+}
+
 footer {
   background: #9141ac;
   padding: 4em;
-  /*pour ne pas avoir les éléments coller aux bord du footer*/
+  /*pour ne pas avoir les éléments colles aux bord du footer*/
+  margin-top: 5em;
+  display: inline-flex;
+}
+
+footer > section {
+  display: block;
+  color: #241f31;
+  text-align: center;
+}
+
+footer > section > p {
+  font-size: 1em;
+}
+
+video {
+  width: 90%;
+  height: auto;
+  /*pour que l'image ne se déforme pas*/
+  margin: 5%;
+  /*2% de chaque côté plus les 96% de la vidéo, est tout l'espace de ma colonne est prix en compte.*/
+}
+
+iframe {
+  width: 720px;
+  height: 405px;
+}
+
+/* Pour visualiser durant les changements, https://codepen.io/pen/ */
+h3 {
+  color: #f5c211;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Helvetica", sans-serif;
+  font-weight: lighter;
+  background: #1f1711;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
+  border-radius: 4em;
+  border-width: 0.3em 0.2em;
+  margin: 5em;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+/*couleur de fond de page, à changer*/
+
+body {
+  display: block;
+  /*type de display, le truc des grenouilles*/
+}
+
+nav {
+  background: #000000;
+  /*couleur de fond du bandeau de naviguation*/
+}
+
+nav > ul {
+  display: flex;
+  /*pour que les éléments li se mettent correctement en page*/
+}
+
+nav > ul > li {
+  display: inline-flex;
+  justify-content: space-around;
+  padding: 0.1em;
+  /*padding défini la largeur du bandeau hors texte*/
+  width: 100%;
+}
+
+nav > ul > li > a {
+  display: inline-block;
+  text-align: center;
+  font-weight: 300;
+  text-decoration: none;
+  color: #ffa348;
+  /*background: #77767b;*/
+  /*le background fait pas terrible je trouve*/
+  padding: 0.2em;
+  border-radius: 2em;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.clair_obscur {
+  background-image: url(IMAGES/BackgroundImage.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.index {
+  background-image: url(IMAGES/accueil.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.field_of_mistria {
+  background-image: url(IMAGES/field_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#button {
+  position: fixed;
+  width: 100%;
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 30; /* pour les mettre au dessus de tt*/
+  /*
+	background: rgba(245, 194, 17, 0.2); 
+	border-radius: 4em; 
+	border-width: 0.3em 0.2em; 
+	*/
+  /*même couleur que la class .normal mais rgb. 
+	Et faudrait plutôt que ce soit individuel sur les boutons mais faut que je fasse l'affichage.*/
+}
+
+h1 {
+  color: #e0c682;
+  text-align: center;
+  font-size: 2.8em;
+  font-family: "Helvetica", sans-serif;
+  font-weight: lighter;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0.5em;
+  /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
+  /*défini la courbe de chaque coin*/
+  border: 0.2em;
+  /*pour rendre le contour plus élégant*/
+  border-width: 0.3em 0.2em;
+  /*taille du contour horizontalement et verticalement*/
+  border-radius: 5em;
+  margin-bottom: 5px;
+}
+
+img {
+  height: auto;
+  /*pour éviter les déformations*/
+}
+
+.carrousel {
+  width: 50%; /*pour pas que ce soit toute la largeur de page*/
+  margin: auto; /* pour centrer le caroussel*/
+  height: auto;
+  overflow: hidden; /*on cache les images qu'on veut pas activement montrer*/
+  border-radius: 8em; /*on arrondi les bords*/
+}
+
+.slides {
+  display: flex;
+  width: 500%; /*100% par image*/
+  height: auto; /*on évite les déformations*/
+  animation: autoplay 20s infinite;
+}
+
+.slide {
+  width: 80%;
+  height: auto;
+  margin: 5em;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* si c'est en autoplay on peut pas sélectionner*/
+@keyframes autoplay {
+  0% {
+    transform: translateX(0);
+  }
+  5% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-20%); /*deuxième image*/
+  }
+  25% {
+    transform: translateX(-20%);
+  }
+  40% {
+    transform: translateX(-40%); /*troisième image*/
+  }
+  45% {
+    transform: translateX(-40%);
+  }
+  60% {
+    transform: translateX(-60%); /*quatrième image*/
+  }
+  65% {
+    transform: translateX(-60%);
+  }
+  80% {
+    transform: translateX(-80%); /*cinquième image*/
+  }
+}
+
+.normal {
+  width: 90%;
+  /*taille de l'image*/
+  margin: 5%;
+  border-radius: 1em;
+  border: 0.5em double #f5c211;
+}
+
+.titre {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+.celine {
+  width: 20%;
+}
+
+section {
+  margin-top: 1em;
+  /*je ne veux une marge qu'au dessus dans le cas des sections*/
+}
+
+h2 {
+  color: #000000;
+  text-align: center;
+  font-size: 2.2em;
+  font-family: "Helvetica", sans-serif;
+  font-weight: lighter;
+  background: #ffbe6f;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
+  border-radius: 4em;
+  border-width: 0.3em 0.2em;
+  margin: 1em;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+p,
+li {
+  color: #ffffff;
+  font-family: "Helvetica", sans-serif;
+  text-align: justify;
+  font-size: 1.8em;
+  margin: 0;
+  margin-right: 3%;
+}
+
+.gras {
+  font-weight: bold;
+}
+
+/*ma classe qui mets les mots en gras.*/
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  background: rgb(0, 0, 0, 0.2);
+  border-radius: 4em;
+  border-width: 0.3em 0.2em;
+  /*pour que la selection soit arrondie*/
+}
+
+/*change la couleur de fond lorque la souris passe dessus*/
+
+ol {
+  color: #e0c682;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Helvetica", sans-serif;
+  font-weight: lighter;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0.5em;
+  /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
+  /*défini la courbe de chaque coin*/
+  border: 0.2em;
+  /*pour rendre le contour plus élégant*/
+  border-width: 0.3em 0.2em;
+  /*taille du contour horizontalement et verticalement*/
+  border-radius: 5em;
+  margin-bottom: 5px;
+  display: inline;
+}
+
+.vs-border {
+  /*ici je permet que les images restent dans leur position par rapport a leur encadrement que j'ai appelé versus*/
+  position: relative;
+  width: 100%;
+  height: 40em;
+  /*pour pas que le hover depasse en dehors du cadre*/
+  overflow: hidden; 
+  border-radius: 4em;
+}
+
+.vs-border img {
+  /*ici c'est pour que les images soient l'une par dessus l'autre a leur position 0*/
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*pour mettre les img même forme que sur la maquette + agrandir l'img qui a la souris dessus*/
+.left {
+  /*pour rogner l'image selon un polynome :
+haut-gauche, haut-droite, bas-droite, bas-gauche*/
+  clip-path: polygon(0 0, 50% 0, 30% 100%, 0 100%);
+}
+
+.left:hover {
+  clip-path: polygon(0 0, 80% 0, 70% 100%, 0 100%);
+  z-index: 20; /*met l'image au dessus de l'autre (axe z)*/
+  transform: scale(1.1); /*effet de zoom*/
+}
+
+.right {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 30% 100%);
+}
+
+.right:hover {
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 20% 100%);
+  z-index: 20;
+  transform: scale(1.1);
+}
+
+footer {
+  background: #9141ac;
+  padding: 4em;
+  /*pour ne pas avoir les éléments colles aux bord du footer*/
   margin-top: 5em;
   display: inline-flex;
 }

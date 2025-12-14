@@ -128,6 +128,18 @@ header {
   background-attachment: fixed;
 }
 
+.Presentation_FOM {
+  font-size: 100%;
+  text-align: left;
+  vertical-align: text-bottom;
+}
+
+.Personnages {
+  font-size: 100%;
+  text-align: right;
+  margin-left: 5em;
+}
+
 #button {
   position: fixed;
   width: 100%;
@@ -241,7 +253,7 @@ img {
 }
 
 .celine {
-  width: 20%;
+  width: 10%;
 }
 
 section {
@@ -411,68 +423,7 @@ body {
 
 nav {
   background: #000000;
-  /*couleur de fond du bandeau de naviguation*/
-}
-
-nav > ul {
-  display: flex;
-  /*pour que les éléments li se mettent correctement en page*/
-}
-
-nav > ul > li {
-  display: inline-flex;
-  justify-content: space-around;
-  padding: 0.1em;
-  /*padding défini la largeur du bandeau hors texte*/
-  width: 100%;
-}
-
-nav > ul > li > a {
-  display: inline-block;
-  text-align: center;
-  font-weight: 300;
-  text-decoration: none;
-  color: #ffa348;
-  /*background: #77767b;*/
-  /*le background fait pas terrible je trouve*/
-  padding: 0.2em;
-  border-radius: 2em;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.clair_obscur {
-  background-image: url(IMAGES/BackgroundImage.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.index {
-  background-image: url(IMAGES/accueil.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.field_of_mistria {
-  background-image: url(IMAGES/field_bg.png);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-#button {
-  position: fixed;
-  width: 100%;
-  display: inline-flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-direction: column;
+  /*couleur de fond du bandeau de naviguati;
   z-index: 30; /* pour les mettre au dessus de tt*/
   /*
 	background: rgba(245, 194, 17, 0.2); 
@@ -598,57 +549,12 @@ img {
   }
 }
 
-.normal {
-  width: 90%;
-  /*taille de l'image*/
-  margin: 5%;
-  border-radius: 1em;
-  border: 0.5em double #f5c211;
-}
-
-.titre {
-  width: 40%;
-  margin-left: 30%;
-  margin-top: 10%;
-}
-
-.celine {
-  width: 20%;
-}
-
 section {
   margin-top: 1em;
   /*je ne veux une marge qu'au dessus dans le cas des sections*/
 }
 
-p,
-li {
-  color: #ffffff;
-  font-family: "Helvetica", sans-serif;
-  text-align: justify;
-  font-size: 1.8em;
-  margin: 0;
-  margin-right: 3%;
-}
-
-.gras {
-  font-weight: bold;
-}
-
-/*ma classe qui mets les mots en gras.*/
-
-a {
-  color: rgb(255, 255, 255);
-}
-
-a:hover {
-  background: rgb(0, 0, 0, 0.2);
-  border-radius: 4em;
-  border-width: 0.3em 0.2em;
-  /*pour que la selection soit arrondie*/
-}
 /*change la couleur de fond lorque la souris passe dessus*/
-
 .index ul {
     display: flex;
     justify-content: center;
@@ -680,77 +586,3 @@ ol {
   margin-bottom: 5px;
   display: inline;
 }
-
-.vs-border {
-  /*ici je permet que les images restent dans leur position par rapport a leur encadrement que j'ai appelé versus*/
-  position: relative;
-  width: 100%;
-  height: 40em;
-  /*pour pas que le hover depasse en dehors du cadre*/
-  overflow: hidden; 
-  border-radius: 4em;
-}
-
-.vs-border img {
-  /*ici c'est pour que les images soient l'une par dessus l'autre a leur position 0*/
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/*pour mettre les img même forme que sur la maquette + agrandir l'img qui a la souris dessus*/
-.left {
-  /*pour rogner l'image selon un polynome :
-haut-gauche, haut-droite, bas-droite, bas-gauche*/
-  clip-path: polygon(0 0, 50% 0, 30% 100%, 0 100%);
-}
-
-.left:hover {
-  clip-path: polygon(0 0, 80% 0, 70% 100%, 0 100%);
-  z-index: 20; /*met l'image au dessus de l'autre (axe z)*/
-  transform: scale(1.1); /*effet de zoom*/
-}
-
-.right {
-  clip-path: polygon(50% 0, 100% 0, 100% 100%, 30% 100%);
-}
-
-.right:hover {
-  clip-path: polygon(30% 0, 100% 0, 100% 100%, 20% 100%);
-  z-index: 20;
-  transform: scale(1.1);
-}
-
-footer {
-  background: #9141ac;
-  padding: 4em;
-  /*pour ne pas avoir les éléments colles aux bord du footer*/
-  margin-top: 5em;
-  display: inline-flex;
-}
-
-footer > section {
-  display: block;
-  color: #241f31;
-  text-align: center;
-}
-
-footer > section > p {
-  font-size: 1em;
-}
-
-video {
-  width: 90%;
-  height: auto;
-  /*pour que l'image ne se déforme pas*/
-  margin: 5%;
-  /*2% de chaque côté plus les 96% de la vidéo, est tout l'espace de ma colonne est prix en compte.*/
-}
-
-iframe {
-  width: 720px;
-  height: 405px;
-}
-
-/* Pour visualiser durant les changements, https://codepen.io/pen/ */

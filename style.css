@@ -102,6 +102,18 @@ header {
   background-attachment: fixed;
 }
 
+.Presentation_CB {
+  font-size: 100%;
+  text-align: left;
+  vertical-align: text-bottom;
+}
+
+.Pourquoi_CB {
+  font-size: 100%;
+  text-align: right;
+  margin-left: 5em;
+}
+
 .index {
   background-image: url(IMAGES/accueil.jpg);
   background-size: cover;

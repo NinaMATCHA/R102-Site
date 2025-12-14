@@ -280,7 +280,6 @@ a:hover {
   border-width: 0.3em 0.2em;
   /*pour que la selection soit arrondie*/
 }
-
 /*change la couleur de fond lorque la souris passe dessus*/
 
 ol {
@@ -490,6 +489,40 @@ h1 {
   margin-bottom: 5px;
 }
 
+h2 {
+  color: #000000;
+  text-align: center;
+  font-size: 2.2em;
+  font-family: "Helvetica", sans-serif;
+  font-weight: lighter;
+  background: #ffbe6f;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
+  border-radius: 4em;
+  border-width: 0.3em 0.2em;
+  margin: 1em;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  color: #f5c211;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Helvetica", sans-serif;
+  font-weight: lighter;
+  background: #1f1711;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
+  border-radius: 4em;
+  border-width: 0.3em 0.2em;
+  margin: 5em;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
 img {
   height: auto;
   /*pour éviter les déformations*/
@@ -576,23 +609,6 @@ section {
   /*je ne veux une marge qu'au dessus dans le cas des sections*/
 }
 
-h2 {
-  color: #000000;
-  text-align: center;
-  font-size: 2.2em;
-  font-family: "Helvetica", sans-serif;
-  font-weight: lighter;
-  background: #ffbe6f;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
-  border-radius: 4em;
-  border-width: 0.3em 0.2em;
-  margin: 1em;
-  margin-top: 10px;
-  margin-bottom: 12px;
-}
-
 p,
 li {
   color: #ffffff;
@@ -619,8 +635,20 @@ a:hover {
   border-width: 0.3em 0.2em;
   /*pour que la selection soit arrondie*/
 }
-
 /*change la couleur de fond lorque la souris passe dessus*/
+
+.index ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    list-style: none;
+}
+
+header.index img {
+    width:10em;
+    height: auto;
+    display: block;
+}
 
 ol {
   color: #e0c682;
@@ -714,19 +742,3 @@ iframe {
 }
 
 /* Pour visualiser durant les changements, https://codepen.io/pen/ */
-h3 {
-  color: #f5c211;
-  text-align: center;
-  font-size: 1.5em;
-  font-family: "Helvetica", sans-serif;
-  font-weight: lighter;
-  background: #1f1711;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
-  border-radius: 4em;
-  border-width: 0.3em 0.2em;
-  margin: 5em;
-  margin-top: 10px;
-  margin-bottom: 12px;
-}

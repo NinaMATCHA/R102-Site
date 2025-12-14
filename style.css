@@ -378,7 +378,8 @@ footer > section {
   text-align: center;
 }
 
-footer > section > p {
+footer>form>p {
   font-size: 1em;
+  text-align: start;
 }
 /* Pour visualiser durant les changements, https://codepen.io/pen/ */

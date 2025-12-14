@@ -38,6 +38,16 @@ section {
   margin-top: 1em; /*je ne veux une marge qu'au dessus dans le cas des sections*/
 }
 
+.aligned-text {
+  margin:4em;
+  display:flex;
+}
+
+.aligned-text img {
+  width:20em;
+  height:auto;
+}
+
 /*NAVIGATION*/
 nav {
   background: #000000; /*couleur de fond du bandeau de naviguation*/

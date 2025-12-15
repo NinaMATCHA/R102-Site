@@ -216,7 +216,7 @@ p, li {
   margin-right: 3%;
 }
 /*liste numérotée*/
-ol {
+.summary {
   color: #e0c682;
   text-align: center;
   font-weight: lighter;

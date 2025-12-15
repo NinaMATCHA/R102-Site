@@ -3,6 +3,12 @@
   padding: 0;
 }/* selecteur universel, sans ceci on avait deux-trois éléments qui avait une mise en page un peu étrange.*/
 
+@media (max-width:980px) {
+  .aligned {
+    flex-direction:column;
+  }
+}
+
 :root {
   /*thème clair*/
   --primary-color-light: #f5c211;
@@ -29,30 +35,19 @@
 html {
   background-color: #282437;
 }
-
 body {
   display: block;
 }
-
 section {
   margin-top: 1em; /*je ne veux une marge qu'au dessus dans le cas des sections*/
 }
-
-
 .aligned {
   margin:4em;
   display:flex;
 }
-
 .aligned img {
   width:20em;
   height:auto;
-}
-
-@media (max-width:980px) {
-  .aligned {
-    flex-direction:column;
-  }
 }
 
 /*NAVIGATION*/
@@ -110,7 +105,7 @@ header.index img {
 
 
 /*LOGO*/
-.titre {
+.title {
   width: 40%;
   margin-left: 30%;
   margin-top: 10%;

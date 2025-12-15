@@ -229,7 +229,7 @@ ol {
   display: inline;
 }
 /*classe qui met les mots en gras*/
-.gras {
+.bold {
   font-weight: bold;
 }
 

@@ -123,14 +123,14 @@ header.index img {
   background-position: center;
   background-attachment: fixed;
 }
-/*titre*/
-.Presentation_CB {
+
+/*Liens interne des sous titres*/
+.internal_link1 {
   font-size: 100%;
   text-align: left;
   vertical-align: text-bottom;
 }
-/*titre*/
-.Pourquoi_CB {
+.internal_link2 {
   font-size: 100%;
   text-align: right;
   margin-left: 5em;
@@ -144,18 +144,6 @@ header.index img {
   background-attachment: fixed;
 }
 
-/*titre*/
-.Presentation_FOM {
-  font-size: 100%;
-  text-align: left;
-  vertical-align: text-bottom;
-}
-/*titre*/
-.Personnages {
-  font-size: 100%;
-  text-align: right;
-  margin-left: 5em;
-}
 /*personnage affiché*/
 .celine {
   width: 20%;

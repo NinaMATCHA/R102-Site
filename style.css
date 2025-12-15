@@ -266,13 +266,6 @@ iframe {
 img {
   height: auto; /*pour éviter les déformations*/
 }
-/*image de la page clair obscur*/
-.normal {
-  width: 90%; /*taille de l'image*/
-  margin: 5%;
-  border-radius: 1em;
-  border: 0.5em double #f5c211;
-}
 
 /*LE VS DE LA PAGE INDEX*/
 .vs-border {

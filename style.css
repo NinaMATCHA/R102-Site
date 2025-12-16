@@ -119,18 +119,6 @@ header.index img {
   background-attachment: fixed;
 }
 
-/*Liens interne des sous titres*/
-.internal_link1 {
-  font-size: 100%;
-  text-align: left;
-  vertical-align: text-bottom;
-}
-.internal_link2 {
-  font-size: 100%;
-  text-align: right;
-  margin-left: 5em;
-}
-
 /*PAGE FIELD OF MISTRIA*/
 .field_of_mistria {
   background-image: url(IMAGES/field_bg.png);
@@ -216,23 +204,34 @@ p, li {
   margin-right: 3%;
 }
 p {
-  margin-left:4em;
+  margin-left:1em;
   margin-top:1em;
 }
 
 /*liste numérotée*/
 .summary {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+/*Liens interne des sous titres*/
+.internal_link {
+  font-size: 2em;
   color: #e0c682;
   text-align: center;
   font-weight: lighter;
   background: rgba(0, 0, 0, 0.5);
-  margin: 0.5em;
-  border: 0.2em;
   border-width: 0.3em 0.2em;
-  border-radius: 5em;
-  margin-bottom: 5px;
-  display: inline;
+  border-radius: 4em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em; 
+  border-width: 0.3em 0.2em;
+  margin: 1em;
+  margin-top: 10px;
+  margin-bottom: 12px;
 }
+
 /*classe qui met les mots en gras*/
 .bold {
   font-weight: bold;
@@ -241,6 +240,8 @@ p {
 /*LIENS*/
 a {
   color: rgb(255, 255, 255);
+  text-decoration: none;
+  
 }
 /*quand on survole un lien*/
 a:hover {

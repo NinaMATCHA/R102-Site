@@ -5,8 +5,9 @@
         <link rel="icon" href="./IMAGES/r102jeux.ico">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" media="all" href="./style.css">
-        <!-- on a pas de javescript <script src="./js/script.js"></script> -->
+        <link id="style2" rel="stylesheet" type="text/css" media="all" href="./style2.css" disable>
+		<link id="style1" rel="stylesheet" type="text/css" media="all" href="./style.css" disable>
+        <script src="./js/script.js"></script>
     </head>
     <body>
         <nav>
@@ -18,12 +19,12 @@
 			</ul>
 		</nav>
     	<div id="button">
-        	<div><a id="button_theme" href=""><img src="IMAGES/theme.png"></a></div>
+        	<div><a id="button_theme" onclick="updateBtn()"><img src="IMAGES/theme.png"></a></div>
     	</div>
         <header class="clair_obscur">
             <img class="title" src="IMAGES/logoCB.png" alt="Logo Clair Obscur">
             <ul class="summary">
-            	<li><a class=" internal_link" href="#presentation">Présentation du jeu</a></li>
+              <li><a class=" internal_link" href="#presentation">Présentation du jeu</a></li>
                 <li><a class="internal_link" href="#why">Pourquoi j'adore ce jeu ?</a></li>
             </ul>
         </header>    

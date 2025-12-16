@@ -42,10 +42,10 @@ section {
   margin-top: 1em; /*je ne veux une marge qu'au dessus dans le cas des sections*/
 }
 .aligned {
-  margin:4em;
   display:flex;
 }
 .aligned img {
+  margin:4em;
   width:20em;
   height:auto;
 }
@@ -215,6 +215,10 @@ p, li {
   margin: 0;
   margin-right: 3%;
 }
+p {
+  margin:4em;
+}
+
 /*liste numérotée*/
 .summary {
   color: #e0c682;

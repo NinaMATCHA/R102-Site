@@ -33,7 +33,7 @@
 
 /*CONSTRUCTION DE LA PAGE*/
 html {
-  background-color: #282437;
+  background-color: #48524c;
 }
 body {
   display: block;
@@ -52,7 +52,7 @@ section {
 
 /*NAVIGATION*/
 nav {
-  background: #000000; /*couleur de fond du bandeau de naviguation*/
+  background: #dbb479; /*couleur de fond du bandeau de naviguation*/
 }
 
 nav > ul {
@@ -167,7 +167,7 @@ h2 {
   font-size: 2.2em;
   font-family: "Helvetica", sans-serif;
   font-weight: lighter;
-  background: #ffbe6f;
+  background: #dbb479;
   padding-top: 0.2em;
   padding-bottom: 0.2em; /*padding pour que le fond ait de l'espace entre le texte et le bord*/
   border-radius: 4em;
@@ -183,7 +183,7 @@ h3 {
   font-size: 1.5em;
   font-family: "Helvetica", sans-serif;
   font-weight: lighter;
-  background: #1f1711;
+  background: #667a75;
   padding-top: 0.2em;
   padding-bottom: 0.2em; /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
   border-radius: 4em;
@@ -364,7 +364,7 @@ img {
 
 /*FOOTER*/
 footer {
-  background: #9141ac;
+  background: #667a75;
   padding: 3em; /*pour ne pas avoir les éléments colles aux bord du footer*/
   margin-top: 5em;
   display: flex;

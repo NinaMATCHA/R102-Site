@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+}/* selecteur universel, sans ceci on avait deux-trois éléments qui avait une mise en page un peu étrange.*/
+
+@media (max-width:980px) {
+  .aligned {
+    flex-direction:column;
+  }
+}
+
+:root {
+  /*thème clair*/
+  --primary-color-light: #f5c211;
+  --background-light: #ffffffff;
+  --text-light: #00000000;
+
+  /*thème obscur*/
+  --primary-color-dark: #282437;
+
+  /* thème sakura*/
+  --primary-color-sakura: #ffb7c5;
+
+  /*defaut*/
+  --primary-color: var(--primary-color-light);
+  --background-color: var(--background-light);
+  --text-color: var(--text-light);
+}
+
+.dark {
+  --primary-color: var(--color-primary-light);
+}
+
+/*CONSTRUCTION DE LA PAGE*/
+html {
+  background-color: #1f1711;
+}
+body {
+  display: block;
+}
+section {
+  margin-top: 1em; /*je ne veux une marge qu'au dessus dans le cas des sections*/
+}
+.aligned {
+  margin:4em;
+  display:flex;
+}
+.aligned img {
+  width:20em;
+  height:auto;
+}
+
+/*NAVIGATION*/
+nav {
+  background: #ffb7c5; /*couleur de fond du bandeau de naviguation*/
+}
+
+nav > ul {
+  display: flex; /*pour que les éléments li se mettent correctement en page*/
+}
+
+nav > ul > li {
+  display: inline-flex;
+  justify-content: space-around;
+  padding: 0.1em; /*padding défini la largeur du bandeau hors texte*/
+  width: 100%;
+}
+
+nav > ul > li > a {
+  display: inline-block;
+  text-align: center;
+  font-weight: 300;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.2em;
+}
+
+/*HEADER*/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*PAGE d'ACCUEIL*/
+.index {
+  background-image: url(IMAGES/accueil.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/*les images cliquables*/
+.index ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    list-style: none;
+}
+
+header.index img {
+    width:10em;
+    height: auto;
+    display: block;
+}
+
+
+/*LOGO*/
+.title {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+/*PAGE CLAIR OBSCUR*/
+.clair_obscur {
+  background-image: url(IMAGES/BackgroundImage.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*Liens interne des sous titres*/
+.internal_link1 {
+  font-size: 100%;
+  text-align: left;
+  vertical-align: text-bottom;
+}
+.internal_link2 {
+  font-size: 100%;
+  text-align: right;
+  margin-left: 5em;
+}
+
+/*PAGE FIELD OF MISTRIA*/
+.field_of_mistria {
+  background-image: url(IMAGES/field_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*personnage affiché*/
+.celine {
+  width: 20%;
+}
+
+/*BUTTON DE THEME ET LANGUE*/
+#button {
+  position: fixed;
+  width: 100%;
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 30; /* pour les mettre au dessus de tout*/
+  background: rgba(245, 194, 17, 0.2); 
+  border-radius: 4em; 
+  border-width: 0.3em 0.2em; 
+}
+
+/*TITRE*/
+h1 {
+  color: #95825e;
+  text-align: center;
+  font-size: 2.8em;
+  font-family: "Helvetica", sans-serif;
+  font-weight: lighter;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0.5em;
+  border: 0.2em;
+  border-width: 0.3em 0.2em;
+  border-radius: 5em;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: #713232;
+  text-align: center;
+  font-size: 2.2em;
+  font-family: "Helvetica", sans-serif;
+  font-weight: lighter;
+  background: #ffbe6f;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em; /*padding pour que le fond ait de l'espace entre le texte et le bord*/
+  border-radius: 4em;
+  border-width: 0.3em 0.2em;
+  margin: 1em;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  color: #f5c211;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Helvetica", sans-serif;
+  font-weight: lighter;
+  background: #1f1711;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em; /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
+  border-radius: 4em;
+  border-width: 0.3em 0.2em;
+  margin: 5em;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+/*TEXTE ET LISTE*/
+/*texte  et éléments de liste*/
+p, li {
+  color: #ffffff;
+  font-family: "Helvetica", sans-serif;
+  text-align: justify;
+  font-size: 1.2em;
+  margin: 0;
+  margin-right: 3%;
+}
+/*liste numérotée*/
+.summary {
+  color: #e0c682;
+  text-align: center;
+  font-weight: lighter;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0.5em;
+  border: 0.2em;
+  border-width: 0.3em 0.2em;
+  border-radius: 5em;
+  margin-bottom: 5px;
+  display: inline;
+}
+/*classe qui met les mots en gras*/
+.bold {
+  font-weight: bold;
+}
+
+/*LIENS*/
+a {
+  color: rgb(255, 255, 255);
+}
+/*quand on survole un lien*/
+a:hover {
+  background: rgb(0, 0, 0, 0.2); /*change la couleur de fond lorque la souris passe dessus*/
+  border-radius: 4em; /*pour que la selection soit arrondie*/
+  border-width: 0.3em 0.2em;
+}
+
+/*MEDIAS*/
+/*VIDEOS*/
+video {
+  width: 90%;
+  height: auto; /*pour que l'image ne se déforme pas*/
+  margin: 5%;  /*2% de chaque côté plus les 96% de la vidéo, est tout l'espace de ma colonne est prix en compte.*/
+}
+iframe {
+  width: 720px;
+  height: 405px;
+}
+
+/*MEDIA*/
+/*IMAGES*/
+img {
+  height: auto; /*pour éviter les déformations*/
+}
+
+/*LE VS DE LA PAGE INDEX*/
+.vs-border {
+  /*Les images restent dans leur position par rapport à leur encadrement appelé versus*/
+  position: relative;
+  width: 100%;
+  height: 40em;
+  /*pour pas que le hover depasse en dehors du cadre*/
+  overflow: hidden; 
+  border-radius: 4em;
+}
+.vs-border img {
+  /*ici c'est pour que les images soient l'une par dessus l'autre a leur position 0*/
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+/*Image de gauche*/
+.left { /*pour rogner l'image selon un polynome : haut-gauche, haut-droite, bas-droite,bas-gauche*/
+  clip-path: polygon(0 0, 50% 0, 30% 100%, 0 100%);
+}
+.left:hover {
+  clip-path: polygon(0 0, 80% 0, 70% 100%, 0 100%);
+  z-index: 20; /*met l'image au dessus de l'autre (axe z)*/
+  transform: scale(1.1); /*effet de zoom*/
+}
+/*Image de droite*/
+.right {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 30% 100%);
+}
+.right:hover {
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 20% 100%);
+  z-index: 20;
+  transform: scale(1.1);
+}
+
+/*LE CARROUSEL DE FIELD OF MISTRIA*/
+.carrousel {
+  width: 50%; /*pour pas que ce soit toute la largeur de page*/
+  margin: auto; /* pour centrer le caroussel*/
+  height: auto;
+  overflow: hidden; /*on cache les images qu'on veut pas activement montrer*/
+  border-radius: 8em; /*on arrondi les bords*/
+}
+/*définir les slides*/
+.slides {
+  display: flex;
+  width: 500%; /*100% par image*/
+  height: auto; /*on évite les déformations*/
+  animation: autoplay 20s infinite;
+}
+/*à affecter au slide de manière individuelle*/
+.slide {
+  width: 80%;
+  height: auto;
+  margin: 5em;
+}
+/*a affecter à l'image dans une slide*/
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/*défilement des images*/
+@keyframes autoplay {
+  0% {
+    transform: translateX(0); /*première image*/
+  }
+  5% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-20%); /*deuxième image*/
+  }
+  25% {
+    transform: translateX(-20%);
+  }
+  40% {
+    transform: translateX(-40%); /*troisième image*/
+  }
+  45% {
+    transform: translateX(-40%);
+  }
+  60% {
+    transform: translateX(-60%); /*quatrième image*/
+  }
+  65% {
+    transform: translateX(-60%);
+  }
+  80% {
+    transform: translateX(-80%); /*cinquième image*/
+  }
+}
+
+/*FOOTER*/
+footer {
+  background: #87562d;
+  padding: 3em; /*pour ne pas avoir les éléments colles aux bord du footer*/
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer > section {
+  color: #87562d;
+  width: 30%;
+  text-align: center;
+}
+
+footer>form>p {
+  text-align: start;
+}
+/* Pour visualiser durant les changements, https://codepen.io/pen/ */

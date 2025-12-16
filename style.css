@@ -67,12 +67,18 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
+  background-color:#a36029;
   display: inline-block;
   text-align: center;
   font-weight: 300;
   text-decoration: none;
-  color: #ffa348;
-  padding: 0.2em;
+  color: #fffff;
+  padding:0.2em;
+  border-radius: 0.7em;
+  border-width: 0.3em 0.2em;
+  margin: 1em;
+  margin-top: 10px;
+  margin-bottom: 12px;
 }
 
 /*HEADER*/
@@ -129,7 +135,7 @@ header.index img {
 
 /*personnage affiché*/
 .celine {
-  width: 20%;
+  width: 10%;
 }
 
 /*BUTTON DE THEME ET LANGUE*/
@@ -140,8 +146,7 @@ header.index img {
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-  z-index: 30; /* pour les mettre au dessus de tout*/
-  background: rgba(245, 194, 17, 0.2); 
+  z-index: 30; /* pour les mettre au dessus de tout*/ 
   border-radius: 4em; 
   border-width: 0.3em 0.2em; 
 }
@@ -224,8 +229,7 @@ p {
   background: rgba(0, 0, 0, 0.5);
   border-width: 0.3em 0.2em;
   border-radius: 4em;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em; 
+  padding:0.2e; 
   border-width: 0.3em 0.2em;
   margin: 1em;
   margin-top: 10px;

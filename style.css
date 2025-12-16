@@ -93,7 +93,7 @@ header {
 
 /*PAGE d'ACCUEIL*/
 .index {
-  background-image: url(IMAGES/accueil.jpg);
+  background-color:#1b302b;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -238,10 +238,9 @@ p {
   text-align: center;
   font-weight: lighter;
   padding:0.2em;
+  background-color:48524c;
+  border-radius:4em;
   border-width: 0.5em 0.2em;
-  border-style: solid;
-  border-image: url("https://static.thenounproject.com/png/2020968-200.png") 13 fill;
-  border-image-outset: 30px;
   margin: 3em;
 }
 

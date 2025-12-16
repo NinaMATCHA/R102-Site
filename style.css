@@ -1,395 +1,103 @@
-* {
-  margin: 0;
-  padding: 0;
-}/* selecteur universel, sans ceci on avait deux-trois éléments qui avait une mise en page un peu étrange.*/
-
-@media (max-width:980px) {
-  .aligned,
-  .summary,
-  footer{
-    flex-direction:column;
-  }
-}
-
-:root {
-  /*thème clair*/
-  --primary-color-light: #f5c211;
-  --background-light: #ffffffff;
-  --text-light: #00000000;
-
-  /*thème obscur*/
-  --primary-color-dark: #282437;
-
-  /* thème sakura*/
-  --primary-color-sakura: #ffb7c5;
-
-  /*defaut*/
-  --primary-color: var(--primary-color-light);
-  --background-color: var(--background-light);
-  --text-color: var(--text-light);
-}
-
-.dark {
-  --primary-color: var(--color-primary-light);
-}
-
-/*CONSTRUCTION DE LA PAGE*/
-html {
-  background-color: #48524c;
-}
-body {
-  display: block;
-}
-section {
-  margin-top: 1em; /*je ne veux une marge qu'au dessus dans le cas des sections*/
-}
-.aligned {
-  display:flex;
-}
-.aligned img {
-  margin:4em;
-  width:20em;
-  height:auto;
-}
-
-/*NAVIGATION*/
-nav {
-  background: #dbb479; /*couleur de fond du bandeau de naviguation*/
-}
-
-nav > ul {
-  display: flex; /*pour que les éléments li se mettent correctement en page*/
-}
-
-nav > ul > li {
-  display: inline-flex;
-  justify-content: space-around;
-  padding: 0.1em; /*padding défini la largeur du bandeau hors texte*/
-  width: 100%;
-}
-
-nav > ul > li > a {
-  background-color:#a36029;
-  display: inline-block;
-  text-align: center;
-  align-content: center;
-  font-weight: 300;
-  text-decoration: none;
-  color: #ffffff;
-  padding:0.2em;
-  border-radius: 0.7em;
-  border-width: 0.3em 0.2em;
-  margin: 1em;
-  margin-top: 10px;
-  margin-bottom: 12px;
-}
-
-/*HEADER*/
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/*PAGE d'ACCUEIL*/
-.index {
-  background-image: url(IMAGES/accueil.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-/*les images cliquables*/
-.index ul {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    list-style: none;
-}
-
-header.index img {
-    width:10em;
-    height: auto;
-    display: block;
-}
-
-
-/*LOGO*/
-.title {
-  width: 40%;
-  margin-left: 30%;
-  margin-top: 10%;
-}
-
-/*PAGE CLAIR OBSCUR*/
-.clair_obscur {
-  background-image: url(IMAGES/BackgroundImage.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-/*PAGE FIELD OF MISTRIA*/
-.field_of_mistria {
-  background-image: url(IMAGES/field_bg.png);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-/*personnage affiché*/
-.celine {
-  width: 10%;
-}
-
-/*BUTTON*/
-/*button de theme*/
-.button {
-  z-index: 100; /* pour le mettre au dessus de tout*/
-  border-radius: 50%; /*button rond*/
-  background: #f5c211;
-  cursor: pointer; /*change le curseur en une main quand on passe dessus*/
-}
-/*button pour changer de theme*/
-#button_theme{
-  position: fixed;
-  top : 2em;
-  right : 0.5em;
-}
-/*button pour remonter tout en haut de la page*/
-#button_up{
-  position: fixed;
-  bottom : 2em;
-  right : 0.5em;
-}
-
-/*TITRE*/
-h1 {
-  color: #e0c682;
-  text-align: center;
-  font-size: 2.8em;
-  font-family: "Helvetica", sans-serif;
-  font-weight: lighter;
-  background: rgba(0, 0, 0, 0.5);
-  margin: 0.5em;
-  border: 0.2em;
-  border-width: 0.3em 0.2em;
-  border-radius: 5em;
-  margin-bottom: 5px;
-}
-
-h2 {
-  color: #000000;
-  text-align: center;
-  font-size: 2.2em;
-  font-family: "Helvetica", sans-serif;
-  font-weight: lighter;
-  background: #dbb479;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em; /*padding pour que le fond ait de l'espace entre le texte et le bord*/
-  border-radius: 4em;
-  border-width: 0.3em 0.2em;
-  margin: 1em;
-  margin-top: 10px;
-  margin-bottom: 12px;
-}
-
-h3 {
-  color: #f5c211;
-  text-align: center;
-  font-size: 1.5em;
-  font-family: "Helvetica", sans-serif;
-  font-weight: lighter;
-  background: #667a75;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em; /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
-  border-radius: 4em;
-  border-width: 0.3em 0.2em;
-  margin: 5em;
-  margin-top: 10px;
-  margin-bottom: 12px;
-}
-
-/*TEXTE ET LISTE*/
-/*texte  et éléments de liste*/
-p, li {
-  color: #ffffff;
-  font-family: "Helvetica", sans-serif;
-  text-align: justify;
-  font-size: 1.2em;
-  margin: 0;
-  margin-right: 3%;
-}
-p {
-  margin-left:1em;
-  margin-top:1em;
-}
-
-/*liste numérotée*/
-.summary {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-}
-
-/*Liens interne des sous titres*/
-.internal_link {
-  font-size: 2em;
-  color: #e0c682;
-  text-align: center;
-  font-weight: lighter;
-  padding:0.2em;
-  background: rgba(0, 0, 0, 0.5);
-  border-width: 0.3em 0.2em;
-  border-radius: 4em;
-  border-width: 0.3em 0.2em;
-  margin: 3em;
-}
-
-/*classe qui met les mots en gras*/
-.bold {
-  font-weight: bold;
-}
-
-/*LIENS*/
-a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  
-}
-/*quand on survole un lien*/
-a:hover {
-  background: rgb(0, 0, 0, 0.2); /*change la couleur de fond lorque la souris passe dessus*/
-  border-radius: 4em; /*pour que la selection soit arrondie*/
-  border-width: 0.3em 0.2em;
-}
-
-/*MEDIAS*/
-/*VIDEOS*/
-video {
-  width: 90%;
-  height: auto; /*pour que l'image ne se déforme pas*/
-  margin: 5%;  /*2% de chaque côté plus les 96% de la vidéo, est tout l'espace de ma colonne est prix en compte.*/
-}
-iframe {
-  width: 720px;
-  height: 405px;
-}
-
-/*MEDIA*/
-/*IMAGES*/
-img {
-  height: auto; /*pour éviter les déformations*/
-}
-
-/*LE VS DE LA PAGE INDEX*/
-.vs-border {
-  /*Les images restent dans leur position par rapport à leur encadrement appelé versus*/
-  position: relative;
-  width: 100%;
-  height: 40em;
-  /*pour pas que le hover depasse en dehors du cadre*/
-  overflow: hidden; 
-  border-radius: 4em;
-}
-.vs-border img {
-  /*ici c'est pour que les images soient l'une par dessus l'autre a leur position 0*/
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-/*Image de gauche*/
-.left { /*pour rogner l'image selon un polynome : haut-gauche, haut-droite, bas-droite,bas-gauche*/
-  clip-path: polygon(0 0, 50% 0, 30% 100%, 0 100%);
-}
-.left:hover {
-  clip-path: polygon(0 0, 80% 0, 70% 100%, 0 100%);
-  z-index: 20; /*met l'image au dessus de l'autre (axe z)*/
-  transform: scale(1.1); /*effet de zoom*/
-}
-/*Image de droite*/
-.right {
-  clip-path: polygon(50% 0, 100% 0, 100% 100%, 30% 100%);
-}
-.right:hover {
-  clip-path: polygon(30% 0, 100% 0, 100% 100%, 20% 100%);
-  z-index: 20;
-  transform: scale(1.1);
-}
-
-/*LE CARROUSEL DE FIELD OF MISTRIA*/
-.carrousel {
-  width: 50%; /*pour pas que ce soit toute la largeur de page*/
-  margin: auto; /* pour centrer le caroussel*/
-  height: auto;
-  overflow: hidden; /*on cache les images qu'on veut pas activement montrer*/
-  border-radius: 8em; /*on arrondi les bords*/
-}
-/*définir les slides*/
-.slides {
-  display: flex;
-  width: 500%; /*100% par image*/
-  height: auto; /*on évite les déformations*/
-  animation: autoplay 20s infinite;
-}
-/*à affecter au slide de manière individuelle*/
-.slide {
-  width: 80%;
-  height: auto;
-  margin: 5em;
-}
-/*a affecter à l'image dans une slide*/
-.slide img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-/*défilement des images*/
-@keyframes autoplay {
-  0% {
-    transform: translateX(0); /*première image*/
-  }
-  5% {
-    transform: translateX(0);
-  }
-  20% {
-    transform: translateX(-20%); /*deuxième image*/
-  }
-  25% {
-    transform: translateX(-20%);
-  }
-  40% {
-    transform: translateX(-40%); /*troisième image*/
-  }
-  45% {
-    transform: translateX(-40%);
-  }
-  60% {
-    transform: translateX(-60%); /*quatrième image*/
-  }
-  65% {
-    transform: translateX(-60%);
-  }
-  80% {
-    transform: translateX(-80%); /*cinquième image*/
-  }
-}
-
-/*FOOTER*/
-footer {
-  background: #667a75;
-  padding: 3em; /*pour ne pas avoir les éléments colles aux bord du footer*/
-  margin-top: 5em;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-footer > section {
-  color: #241f31;
-  text-align: center;
-}
-
-footer>form>p {
-  text-align: start;
-}
-/* Pour visualiser durant les changements, https://codepen.io/pen/ */
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Field of Mistria</title>
+        <link rel="icon" href="IMAGES/r102jeux.ico">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link id="style2" rel="stylesheet" type="text/css" media="all" href="./style2.css">
+		<link id="style1" rel="stylesheet" type="text/css" media="all" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Pixelify Sans' rel='stylesheet'>
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+        <nav>
+			<ul>
+				<li><a href="./index.html"><img src="IMAGES/accueil.png" alt="accueil"></a></li>
+				<li><a href="#form">Formulaire</a></li>
+				<li><a href="./field_of_mistria.html">Field of Mistria</a></li>
+        		<li><a href="./clair_obscur.html">Clair Obscur</a></li>
+			</ul>
+		</nav>
+    	<a id="button_theme" onclick="updateBtn()"><img class="button" src="IMAGES/theme.png" alt="theme"></a>
+    	<a id="button_up" href="#top"><img class="button" src="IMAGES/theme.png" alt="go up"></a>
+        <header class="field_of_mistria">
+            <img class="title" src="IMAGES/field_logo.webp" alt="Logo Field of Mistria">
+            <ul class="summary">
+                <li><a class="internal_link" href="#presentation">Présentation du jeu</a></li>
+                <li><a class="internal_link" href="#personnages">Personnages</a></li>
+            </ul>
+            <img class="celine" src="IMAGES/Celine_autumn.webp" alt="Celine">
+        </header>
+        <section>
+            <h2 id="presentation">Présentation du jeu</h2> <!--Présentation du gameplay ainsi que du jeu-->
+            <div class="aligned">
+                <div>
+                    <p>
+                    N'avez vous déjà pas rêvé de vous échapper du quotidien monotone du travail en ville pour rejoindre la tranquilité rurale de nos campagnes ? Justement, Field of Mistria est un jeu de gestion d'une ferme, ce qui est un sous genre des jeux de simulation. Dedans on y incarne un aventurier qui répond à la requête d'une petite ville, Mistria. Mistria, une ville auparavant reconnue, a récemment été victime d'un tremblement de terre, et a perdu en renommée dans le pays. L'aide reçue par la capitale de ce pays n'était pas assez pour faire les réparations nécessaires et permettre à la ville de se remettre.
+                    </p>
+                    <p>
+                    C'est là qu'intervient notre personnage. La requête de la maire de Mistria étant qu'en échange de nous donner une ferme, on aide les habitants et la ville à doucement se remettre et faire de nouveau briller cette petite ville dans le pays.
+                    </p>
+                    <p>
+                    Le principe du jeu est simple : avec un système de temps qui passe, de gestion de ferme par ce qu'on peut y faire pousser, mais aussi les animaux qu'on peut y élever, de relations avec les personnages qui ont eux même chacun leur personnalité très définie, et bien sûr une ville qui n'attends que nous pour la faire grandir et se développer au fur et a mesure que l'on aide à sa prospérité..
+                    </p>
+                </div>
+                <div><img src="IMAGES/mistria_game.webp" alt="gameplay de field of mistria"></div>
+            </div>
+        </section>
+        <section>
+            <h2 id="personnages">Personnages</h2> <!--Présentation du gameplay ainsi que du jeu-->
+            <h3>Impact des personages sur l'histoire</h3>
+            <p>
+                Plus que simplement s'occuper de notre ferme, dans notre ville il y a déjà ses habitants. Il y a effectivement beaucoup de personnages, qui ont tous des dialogues, une histoire et des buts très variés que l'on a l'occasion de découvrir au fur et à mesure que l'on avance dans le jeu et que l'on interagit avec eux. Mistria possède une grande variété de personnalités et de passions, ce qui rend le jeu vivant. Mais ce n'est pas tout, comme dans la majorités des jeux de ce genre, il est possible de pousser la relation plus loin qu'une simple amitié pour certains personnages...
+            </p>
+            <h3>Ne sont-ils pas magnifiques?</h3>
+            <div class="carrousel">
+                <div class="slides">
+                    <div class="slide" id="s1"><img src="./IMAGES/Dozy.png" alt=""></div>
+                    <div class="slide" id="s2"><img src="./IMAGES/Eiland_winter.png" alt=""></div>
+                    <div class="slide" id="s3"><img src="./IMAGES/Nora_spring.png" alt=""></div>
+                    <div class="slide" id="s4"><img src="./IMAGES/Hayden_spring.png" alt=""></div>
+                    <div class="slide" id="s5"><img src="./IMAGES/Hemlock_spring.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+			<section>
+				<h3>Mentions légales</h3>  <!-- Pour dire à qui appartient le site -->
+				<p>
+					Le site web apartient à Nina MATIC CHARBIT, Ewan FRANCOIS et Ombeline CHAUD. Ce site est réalisé dans le cadre de nos études. Icones <a target="_blank" href="https://icons8.com/icon/JEHyP4UaUZeT/home">accueil</a> et <a target="_blank" href="https://icons8.com/icon/hVsO9jMVuSJB/automatic-contrast">theme</a> par <a target="_blank" href="https://icons8.com">Icons8</a>
+				</p>
+			</section>
+        	<form id="form" action="mailto:ewan.francois@etu.univ-amu.fr?subject=Formulaire%20Site&body=Bonjour%2C%0A%0A" method="post" enctype="text/plain">
+			<!-- les mails sont envoyés à Ewan -->
+				<p>
+					<span>Quel est votre jeu préféré?</span>
+					<br>
+					<input id="clair_obscur" type="radio" name="jeu_favori" value="clair_obscur"> <!--une seule valeur de type radio peut être choisie pour un même nom-->
+					<label for="clair_obscur"> Clair Obscur</label>
+					<br>
+					<input id="field_of_mistria" type="radio" name="jeu_favori" value="field_of_mistria"> <!--une seule valeur de type radio peut être choisie pour un même nom-->
+					<label for="field_of_mistria">Field Of Mistria</label>
+					<br>
+					<label for="prenom">Prenom ou nom d'utilisateur</label>
+					<input id="prenom" type="text">
+					<br>
+					<label for="eleve_favori"> Qui souhaitez-vous contactez?</label>
+					<select name="eleve_favori" id="eleve_favori"> <!--menu déroulant-->
+						<option value="aucun" selected="selected">je déteste mes élèves</option><!-- valeur choisie par défaut-->
+						<option value="CHAUD">Ombeline CHAUD</option>
+						<option value="EWAN">Ewan FRANCOIS</option>
+						<option value="MATIC">Nina MATIC CHARBIT</option>
+					</select>
+					<br>
+					<textarea id="message" name="message" rows="5" cols="30">...</textarea> <!--rows et cols définissent la taille-->
+					<label for="message">Votre Message</label>
+					<br>
+					<input type="submit" value="Envoyer">  <!--bouton envoyer -->
+				</p>
+        	</form>
+    	</footer>
+    </body>
+</html>

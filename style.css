@@ -240,7 +240,7 @@ p {
   padding:0.2em;
   border-width: 0.5em 0.2em;
   border-style: solid;
-  border-image: url("IMAGES/pixelborder.png") 13 fill;
+  border-image: url("https://static.thenounproject.com/png/2020968-200.png") 13 fill;
   border-image-outset: 30px;
   margin: 3em;
 }

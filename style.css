@@ -238,7 +238,6 @@ p {
   text-align: center;
   font-weight: lighter;
   padding:0.2em;
-  background: rgba(0, 0, 0, 0.5);
   border-width: 0.5em 0.2em;
   border-style: solid;
   border-image: url("IMAGES/pixelborder.png") 13 fill;

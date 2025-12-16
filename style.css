@@ -4,7 +4,9 @@
 }/* selecteur universel, sans ceci on avait deux-trois éléments qui avait une mise en page un peu étrange.*/
 
 @media (max-width:980px) {
-  .aligned {
+  .aligned,
+  .summary,
+  footer{
     flex-direction:column;
   }
 }

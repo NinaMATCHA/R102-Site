@@ -229,6 +229,7 @@ p {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  margin:2em;
 }
 
 /*Liens interne des sous titres*/
@@ -241,7 +242,6 @@ p {
   background-color:48524c;
   border-radius:4em;
   border-width: 0.5em 0.2em;
-  margin: 3em;
 }
 
 /*classe qui met les mots en gras*/

@@ -47,7 +47,6 @@ section {
   display:flex;
 }
 .aligned img {
-  margin:4em;
   width:20em;
   height:auto;
 }

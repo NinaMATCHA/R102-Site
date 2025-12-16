@@ -216,7 +216,8 @@ p, li {
   margin-right: 3%;
 }
 p {
-  margin:4em;
+  margin-left:4em;
+  margin-top:1em;
 }
 
 /*liste numérotée*/

@@ -386,67 +386,68 @@ img {
 
 /*CONSTRUCTION DE LA PAGE*/
 html {
-  background-color: #48524c;
+	background-color: #48524c;
 }
 body {
-  display: block;
+	display: block;
 }
 section {
-  margin-top: 1em; /*je ne veux une marge qu'au dessus dans le cas des sections*/
+	margin-top: 1em; /*je ne veux une marge qu'au dessus dans le cas des sections*/
 }
 .aligned {
-  display:flex;
+	display:flex;
 }
 .aligned img {
-  margin:4em;
-  width:20em;
-  height:auto;
+	margin:4em;
+	width:20em;
+	height:auto;
 }
 
 /*NAVIGATION*/
 nav {
-  background: #dbb479; /*couleur de fond du bandeau de naviguation*/
+	background: #dbb479; /*couleur de fond du bandeau de naviguation*/
 }
 
 nav > ul {
-  display: flex; /*pour que les éléments li se mettent correctement en page*/
+	display: flex; /*pour que les éléments li se mettent correctement en page*/
 }
 
 nav > ul > li {
-  display: inline-flex;
-  justify-content: space-around;
-  padding: 0.1em; /*padding défini la largeur du bandeau hors texte*/
-  width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	padding: 0.1em; /*padding défini la largeur du bandeau hors texte*/
+	width: 100%;
 }
 
 nav > ul > li > a {
-  background-color:#a36029;
-  display: inline-block;
-  text-align: center;
-  font-weight: 300;
-  text-decoration: none;
-  color: #fffff;
-  padding:0.2em;
-  border-radius: 0.7em;
-  border-width: 0.3em 0.2em;
-  margin: 1em;
-  margin-top: 10px;
-  margin-bottom: 12px;
+	background-color:#a36029;
+	display: inline-block;
+	text-align: center;
+	align-content: center;
+	font-weight: 300;
+	text-decoration: none;
+	color: #fffff;
+	padding:0.2em;
+	border-radius: 0.7em;
+	border-width: 0.3em 0.2em;
+	margin: 1em;
+	margin-top: 10px;
+	margin-bottom: 12px;
 }
 
 /*HEADER*/
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 /*PAGE d'ACCUEIL*/
 .index {
-  background-image: url(IMAGES/accueil.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+	background-image: url(IMAGES/accueil.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 /*les images cliquables*/
 .index ul {
@@ -465,90 +466,90 @@ header.index img {
 
 /*LOGO*/
 .title {
-  width: 40%;
-  margin-left: 30%;
-  margin-top: 10%;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 10%;
 }
 
 /*PAGE CLAIR OBSCUR*/
 .clair_obscur {
-  background-image: url(IMAGES/BackgroundImage.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+    background-image: url(IMAGES/BackgroundImage.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 /*PAGE FIELD OF MISTRIA*/
 .field_of_mistria {
-  background-image: url(IMAGES/field_bg.png);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+	background-image: url(IMAGES/field_bg.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 /*personnage affiché*/
 .celine {
-  width: 10%;
+	width: 10%;
 }
 
 /*BUTTON DE THEME ET LANGUE*/
 #button {
-  position: fixed;
-  width: 100%;
-  display: inline-flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-direction: column;
-  z-index: 30; /* pour les mettre au dessus de tout*/ 
-  border-radius: 4em; 
-  border-width: 0.3em 0.2em; 
+	position: fixed;
+	width: 100%;
+	display: inline-flex;
+	align-items: flex-end;
+	justify-content: center;
+	flex-direction: column;
+	z-index: 30; /* pour les mettre au dessus de tout*/ 
+	border-radius: 4em; 
+	border-width: 0.3em 0.2em; 
 }
 
 /*TITRE*/
 h1 {
-  color: #e0c682;
-  text-align: center;
-  font-size: 2.8em;
-  font-family: "Helvetica", sans-serif;
-  font-weight: lighter;
-  background: rgba(0, 0, 0, 0.5);
-  margin: 0.5em;
-  border: 0.2em;
-  border-width: 0.3em 0.2em;
-  border-radius: 5em;
-  margin-bottom: 5px;
+	color: #e0c682;
+	text-align: center;
+	font-size: 2.8em;
+	font-family: "Helvetica", sans-serif;
+	font-weight: lighter;
+	background: rgba(0, 0, 0, 0.5);
+	margin: 0.5em;
+	border: 0.2em;
+	border-width: 0.3em 0.2em;
+	border-radius: 5em;
+	margin-bottom: 5px;
 }
 
 h2 {
-  color: #000000;
-  text-align: center;
-  font-size: 2.2em;
-  font-family: "Helvetica", sans-serif;
-  font-weight: lighter;
-  background: #dbb479;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em; /*padding pour que le fond ait de l'espace entre le texte et le bord*/
-  border-radius: 4em;
-  border-width: 0.3em 0.2em;
-  margin: 1em;
-  margin-top: 10px;
-  margin-bottom: 12px;
+	color: #000000;
+	text-align: center;
+	font-size: 2.2em;
+	font-family: "Helvetica", sans-serif;
+	font-weight: lighter;
+	background: #dbb479;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em; /*padding pour que le fond ait de l'espace entre le texte et le bord*/
+	border-radius: 4em;
+	border-width: 0.3em 0.2em;
+	margin: 1em;
+	margin-top: 10px;
+	margin-bottom: 12px;
 }
 
 h3 {
-  color: #f5c211;
-  text-align: center;
-  font-size: 1.5em;
-  font-family: "Helvetica", sans-serif;
-  font-weight: lighter;
-  background: #667a75;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em; /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
-  border-radius: 4em;
-  border-width: 0.3em 0.2em;
-  margin: 5em;
-  margin-top: 10px;
-  margin-bottom: 12px;
+	color: #f5c211;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: "Helvetica", sans-serif;
+	font-weight: lighter;
+	background: #667a75;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em; /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
+	border-radius: 4em;
+	border-width: 0.3em 0.2em;
+	margin: 5em;
+	margin-top: 10px;
+	margin-bottom: 12px;
 }
 
 /*TEXTE ET LISTE*/

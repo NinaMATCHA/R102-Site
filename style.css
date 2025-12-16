@@ -141,17 +141,25 @@ header.index img {
   width: 10%;
 }
 
-/*BUTTON DE THEME ET LANGUE*/
-#button {
+/*BUTTON*/
+/*button de theme*/
+.button {
+  z-index: 100; /* pour le mettre au dessus de tout*/
+  border-radius: 50%; /*button rond*/
+  background: #f5c211;
+  cursor: pointer; /*change le curseur en une main quand on passe dessus*/
+}
+/*button pour changer de theme*/
+#button_theme{
   position: fixed;
-  width: 100%;
-  display: inline-flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-direction: column;
-  z-index: 30; /* pour les mettre au dessus de tout*/ 
-  border-radius: 4em; 
-  border-width: 0.3em 0.2em; 
+  top : 2em;
+  right : 0.5em;
+}
+/*button pour remonter tout en haut de la page*/
+#button_up{
+  position: fixed;
+  bottom : 2em;
+  right : 0.5em;
 }
 
 /*TITRE*/

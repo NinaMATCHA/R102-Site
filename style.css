@@ -53,6 +53,8 @@ body {
 }
 section {
   margin-top: 1em; /*je ne veux une marge qu'au dessus dans le cas des sections*/
+  padding-left: 5%; /*met un espace sur les cotés de la page*/
+  padding-right: 5%;
 }
 .aligned {
   display:flex;
@@ -148,7 +150,7 @@ header.index img {
 
 /*personnage affiché*/
 .celine {
-  width: 20em;
+  width: 15em;
   height: auto;
 }
 

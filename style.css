@@ -137,8 +137,8 @@ header.index img {
 
 /*LOGO*/
 .title {
-  width: 40%;       /* Prend 40% de la largeur */
-  margin-left: 30%; /* Pousse de 30% vers la droite pour centrer */
+  width: 40%;
+  margin-left: 30%;
   margin-top: 10%;
 }
 

@@ -8,6 +8,7 @@
   .summary,
   footer{
     flex-direction:column;
+    align-items: center
   }
 
   .index ul {

@@ -249,6 +249,14 @@ p {
   margin:2em;
 }
 
+.summary li{
+  margin-right: 0;
+  margin-bottom: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 /*Liens interne des sous titres*/
 .internal_link {
   font-size: 2em;
@@ -256,7 +264,7 @@ p {
   text-align: center;
   font-weight: lighter;
   padding:0.2em;
-  background-color:48524c;
+  background-color: #48524c;
   border-radius:4em;
   border-width: 0.5em 0.2em;
 }

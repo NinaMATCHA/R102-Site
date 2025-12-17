@@ -148,7 +148,8 @@ header.index img {
 
 /*personnage affiché*/
 .celine {
-  width: 10%;
+  width: 20em;
+  height: auto;
 }
 
 /*BUTTON*/

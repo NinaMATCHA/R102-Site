@@ -10,7 +10,7 @@
     flex-direction:column;
   }
 
-  index ul {
+  .index ul {
     flex-direction: column;
     align-items: center;
   }

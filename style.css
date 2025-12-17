@@ -130,9 +130,10 @@ header.index img {
 
 /*LOGO*/
 .title {
-  width: 40%;
-  margin-left: 30%;
-  margin-top: 10%;
+  width: 80%;
+  margin-left: auto; /*pour centrer sans etre petit bug sur tel*/
+  margin-right: auto;
+  margin-top: 2em;
 }
 
 /*PAGE CLAIR OBSCUR*/

@@ -69,7 +69,7 @@ nav > ul > li {
   display: inline-flex;
   justify-content: space-around;
   padding: 0.1em; /*padding défini la largeur du bandeau hors texte*/
-  width: 100%;
+  width: auto;
 }
 
 nav > ul > li > a {

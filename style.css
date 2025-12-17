@@ -9,6 +9,11 @@
   footer{
     flex-direction:column;
   }
+
+  index ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 :root {

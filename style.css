@@ -13,6 +13,13 @@
     margin-left: 0;
   }
 
+  .title {
+    width: 80%;
+    margin-left: auto; /*pour centrer sans etre petit bug sur tel*/
+    margin-right: auto;
+    margin-top: 2em;
+  }
+
   .index ul {
     overflow-x: auto;
   }
@@ -130,10 +137,9 @@ header.index img {
 
 /*LOGO*/
 .title {
-  width: 80%;
-  margin-left: auto; /*pour centrer sans etre petit bug sur tel*/
-  margin-right: auto;
-  margin-top: 2em;
+  width: 40%;       /* Prend 40% de la largeur */
+  margin-left: 30%; /* Pousse de 30% vers la droite pour centrer */
+  margin-top: 10%;
 }
 
 /*PAGE CLAIR OBSCUR*/

@@ -4,8 +4,8 @@
 }/* selecteur universel, sans ceci on avait deux-trois éléments qui avait une mise en page un peu étrange.*/
 
 @media (max-width:980px) {
-  .aligned,
-  .summary,
+  #aligned,
+  #summary,
   footer{
     flex-direction:column;
     align-items: center;
@@ -13,7 +13,7 @@
     margin-left: 0;
   }
 
-  .index ul {
+  #index ul {
     overflow-x: auto;
   }
   

@@ -4,8 +4,8 @@
 }/* selecteur universel, sans ceci on avait deux-trois éléments qui avait une mise en page un peu étrange.*/
 
 @media (max-width:980px) {
-  .aligned,
-  .summary,
+  #aligned,
+  #summary,
   footer{
     flex-direction:column;
     align-items: center;
@@ -37,10 +37,10 @@ section {
   padding-left: 5%; /*met un espace sur les cotés de la page*/
   padding-right: 5%;
 }
-.aligned {
+#aligned {
   display:flex;
 }
-.aligned img {
+#aligned img {
   width:20em;
   height:auto;
 }

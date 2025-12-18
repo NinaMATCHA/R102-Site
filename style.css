@@ -16,6 +16,10 @@
   .index ul {
     overflow-x: auto;
   }
+
+  h1 {
+    font-size:1.8em;
+  }
   
   nav > ul > li {
     margin: 0;

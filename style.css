@@ -37,10 +37,10 @@ section {
   padding-left: 5%; /*met un espace sur les cotés de la page*/
   padding-right: 5%;
 }
-.aligned {
+#aligned {
   display:flex;
 }
-.aligned img {
+#aligned img {
   width:20em;
   height:auto;
 }

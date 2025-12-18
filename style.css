@@ -150,7 +150,7 @@ header.index img {
 #button_up{
   z-index: 100;
   position: fixed;
-  bottom : 2em;
+  bottom : 3em;
   right : 0.5em;
 }
 

@@ -290,7 +290,6 @@ img {
   height: 40em;
   /*pour pas que le hover depasse en dehors du cadre*/
   overflow: hidden; 
-  border-radius: 4em;
   margin-top:0.5em;
 }
 .vs-border img {

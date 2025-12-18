@@ -289,6 +289,7 @@ img {
   /*pour pas que le hover depasse en dehors du cadre*/
   overflow: hidden; 
   border-radius: 4em;
+  margin-top:0.5em;
 }
 .vs-border img {
   /*ici c'est pour que les images soient l'une par dessus l'autre a leur position 0*/

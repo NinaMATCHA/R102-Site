@@ -16,10 +16,6 @@
   .index ul {
     overflow-x: auto;
   }
-
-  h1 {
-    font-size:1.8em;
-  }
   
   nav > ul > li {
     margin: 0;
@@ -166,7 +162,7 @@ h1 {
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-  font-size: 8em;
+  font-size: 3em;
   font-family: 'Times New Roman', serif;
   font-weight: lighter;
   text-shadow: #ffffff 1px 0 10px;

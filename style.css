@@ -158,15 +158,14 @@ header.index img {
 h1 {
   color: #e0c682;
   text-align: center;
-  font-size: 2.8em;
+  font-size: 8em;
   font-family: "Pixelify Sans";
   font-weight: lighter;
-  background: rgba(0, 0, 0, 0.5);
   margin: 0.5em;
   border: 0.2em;
   border-width: 0.3em 0.2em;
   border-radius: 5em;
-  margin-bottom: 5px;
+  margin-bottom: 1em;
 }
 
 h2 {
@@ -222,6 +221,7 @@ p {
   justify-content: space-around;
   list-style: none;
   margin:0.5em;
+  margin-bottom:1em;
 }
 
 .summary li{

@@ -114,7 +114,7 @@ header.index img {
 }
 
 /*PAGE CLAIR OBSCUR*/
-.clair_obscur {
+.page_clair_obscur {
   background-image: url(IMAGES/BackgroundImage.jpeg);
   background-size: cover;
   background-position: center;
@@ -122,7 +122,7 @@ header.index img {
 }
 
 /*PAGE FIELD OF MISTRIA*/
-.field_of_mistria {
+.page_field_of_mistria {
   background-color:#0a0a0c;
   background-size: cover;
   background-position: center;

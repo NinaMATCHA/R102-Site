@@ -8,6 +8,20 @@
   .summary,
   footer{
     flex-direction:column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .index ul {
+    overflow-x: auto;
+  }
+  
+  nav > ul > li {
+    margin: 0;
+  }
+  nav > ul {
+    overflow-x: auto;
   }
 }
 
@@ -35,26 +49,29 @@
 
 /*CONSTRUCTION DE LA PAGE*/
 html {
-  background-color: #272828;
+  background-color: #0f0f11;
 }
 body {
   display: block;
 }
 section {
   margin-top: 1em; /*je ne veux une marge qu'au dessus dans le cas des sections*/
+  padding-left: 5%; /*met un espace sur les cotés de la page*/
+  padding-right: 5%;
 }
 .aligned {
   display:flex;
 }
 .aligned img {
-  margin:4em;
   width:20em;
   height:auto;
 }
 
 /*NAVIGATION*/
 nav {
-  background: #888888; /*couleur de fond du bandeau de naviguation*/
+  background: #161618; /*couleur de fond du bandeau de naviguation*/
+  border-bottom: 2px solid;
+  border-color:#c5a059;
 }
 
 nav > ul {
@@ -65,17 +82,18 @@ nav > ul > li {
   display: inline-flex;
   justify-content: space-around;
   padding: 0.1em; /*padding défini la largeur du bandeau hors texte*/
-  width: 100%;
+  width: auto;
 }
 
 nav > ul > li > a {
-  background-color:#000000;
+  
+  color: #c5a059;
   display: inline-block;
   text-align: center;
   align-content: center;
   font-weight: 300;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
   padding:0.2em;
   border-radius: 0.7em;
   border-width: 0.3em 0.2em;
@@ -93,10 +111,7 @@ header {
 
 /*PAGE d'ACCUEIL*/
 .index {
-  background-image: url(IMAGES/accueil.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-color:#0a0a0c;
 }
 /*les images cliquables*/
 .index ul {
@@ -138,25 +153,27 @@ header.index img {
 
 /*personnage affiché*/
 .celine {
-  width: 10%;
+  width: 15em;
+  height: auto;
 }
 
 /*BUTTON*/
 /*button de theme*/
 .button {
-  z-index: 100; /* pour le mettre au dessus de tout*/
   border-radius: 50%; /*button rond*/
-  background: #ffffff;
+  background: #c5a059;
   cursor: pointer; /*change le curseur en une main quand on passe dessus*/
 }
 /*button pour changer de theme*/
 #button_theme{
+  z-index: 100; /* pour le mettre au dessus de tout*/
   position: fixed;
   top : 2em;
   right : 0.5em;
 }
 /*button pour remonter tout en haut de la page*/
 #button_up{
+  z-index: 100;
   position: fixed;
   bottom : 2em;
   right : 0.5em;
@@ -164,46 +181,42 @@ header.index img {
 
 /*TITRE*/
 h1 {
-  color: #3a3a3a;
+  text-transform: uppercase;
+  color: #ffffff;
   text-align: center;
   font-size: 2.8em;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', serif;
   font-weight: lighter;
-  background: rgba(0, 0, 0, 0.5);
+  text-shadow: #ffffff 1px 0 10px;
   margin: 0.5em;
   border: 0.2em;
-  border-width: 0.3em 0.2em;
-  border-radius: 5em;
   margin-bottom: 5px;
 }
 
 h2 {
-  color: #000000;
+  color: #c5a059;
   text-align: center;
   font-size: 2.2em;
-  font-family:'Times New Roman', Times, serif;
+  ont-family: 'Times New Roman', serif;
   font-weight: lighter;
-  background: #929292;
   padding-top: 0.2em;
   padding-bottom: 0.2em; /*padding pour que le fond ait de l'espace entre le texte et le bord*/
-  border-radius: 0.5em;
-  border-width: 0.3em 0.2em;
+  border-bottom: 2px solid;
+  border-color:#c5a059;
   margin: 1em;
   margin-top: 10px;
   margin-bottom: 12px;
 }
 
 h3 {
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   font-size: 1.5em;
-  font-family:'Times New Roman', Times, serif;
-  font-weight: bolder;
-  background: #667a75;
+  ont-family: 'Times New Roman', serif;
+  font-weight: lighter;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(80, 80, 80, 1) 50%, rgba(255, 255, 255, 0) 100%);/*gradient realisé grace a cssgradient.io*/
   padding-top: 0.2em;
-  padding-bottom: 0.5em; /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
-  border-radius: 0.5em;
-  border-width: 0.5em 1em;
+  padding-bottom: 0.2em; /*padding est pour que le fond ait de l'espace entre le texte et le bord*/
   margin: 5em;
   margin-top: 10px;
   margin-bottom: 12px;
@@ -213,14 +226,13 @@ h3 {
 /*texte  et éléments de liste*/
 p, li {
   color: #ffffff;
-  font-family:'Times New Roman', Times, serif;
+  ont-family: 'Times New Roman', serif;
   text-align: justify;
   font-size: 1.2em;
   margin: 0;
   margin-right: 3%;
 }
 p {
-  font-family:'Times New Roman', Times, serif;
   margin-left:1em;
   margin-top:1em;
 }
@@ -230,20 +242,29 @@ p {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  margin:0.5em;
+}
+
+.summary li{
+  margin-right: 0;
+  margin-bottom: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /*Liens interne des sous titres*/
 .internal_link {
-  font-size: 2em;
-  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  color: #c5a059;
   text-align: center;
-  font-weight: lighter;
   padding:0.2em;
-  background: rgba(0, 0, 0, 0.5);
-  border-width: 0.3em 0.2em;
-  border-radius: 4em;
-  border-width: 0.3em 0.2em;
-  margin: 3em;
+  border-style:solid;
+  border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(80, 80, 80, 1) 50%, rgba(255, 255, 255, 0) 100%) 30;
+  border-left:none;
+  border-right:none;
+  border-width: 0.2em;
 }
 
 /*classe qui met les mots en gras*/
@@ -260,8 +281,7 @@ a {
 /*quand on survole un lien*/
 a:hover {
   background: rgb(0, 0, 0, 0.2); /*change la couleur de fond lorque la souris passe dessus*/
-  border-radius: 4em; /*pour que la selection soit arrondie*/
-  border-width: 0.3em 0.2em;
+  border-width: 0.2em;
 }
 
 /*MEDIAS*/
@@ -298,6 +318,7 @@ img {
   inset: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 /*Image de gauche*/
 .left { /*pour rogner l'image selon un polynome : haut-gauche, haut-droite, bas-droite,bas-gauche*/
@@ -324,7 +345,7 @@ img {
   margin: auto; /* pour centrer le caroussel*/
   height: auto;
   overflow: hidden; /*on cache les images qu'on veut pas activement montrer*/
-  border-radius: 8em; /*on arrondi les bords*/
+  border-radius: 2em; /*on arrondi les bords*/
 }
 /*définir les slides*/
 .slides {
@@ -335,14 +356,13 @@ img {
 }
 /*à affecter au slide de manière individuelle*/
 .slide {
-  width: 80%;
-  height: auto;
-  margin: 5em;
+  display: flex;
+  justify-content: center;
 }
 /*a affecter à l'image dans une slide*/
 .slide img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 20em;
   object-fit: cover;
 }
 /*défilement des images*/
@@ -378,7 +398,7 @@ img {
 
 /*FOOTER*/
 footer {
-  background: #667a75;
+  background: #0a0a0c;
   padding: 3em; /*pour ne pas avoir les éléments colles aux bord du footer*/
   margin-top: 5em;
   display: flex;

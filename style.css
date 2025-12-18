@@ -85,18 +85,18 @@ header {
 }
 
 /*PAGE d'ACCUEIL*/
-.index {
+#index {
   background-color:#292e2b;
 }
 /*les images cliquables*/
-.index ul {
+#index ul {
     display: flex;
     justify-content: center;
     gap: 2em;
     list-style: none;
 }
 
-header.index img {
+#index img {
     width:10em;
     height: auto;
     display: block;
@@ -104,14 +104,14 @@ header.index img {
 
 
 /*LOGO*/
-.title {
+#title {
   width: 40%;
   margin-left: 30%;
   margin-top: 10%;
 }
 
 /*PAGE CLAIR OBSCUR*/
-.clair_obscur {
+#page_clair_obscur {
   background-image: url(IMAGES/BackgroundImage.jpeg);
   background-size: cover;
   background-position: center;
@@ -119,7 +119,7 @@ header.index img {
 }
 
 /*PAGE FIELD OF MISTRIA*/
-.field_of_mistria {
+#page_field_of_mistria {
   background-image: url(IMAGES/field_bg.png);
   background-size: cover;
   background-position: center;
@@ -127,7 +127,7 @@ header.index img {
 }
 
 /*personnage affiché*/
-.celine {
+#celine {
   width: 15em;
   height: auto;
 }
@@ -216,7 +216,7 @@ p {
 }
 
 /*liste numérotée*/
-.summary {
+#summary {
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -224,7 +224,7 @@ p {
   margin-bottom:1em;
 }
 
-.summary li{
+#summary li{
   margin-right: 0;
   margin-bottom: 1em;
   width: 100%;
@@ -281,7 +281,7 @@ img {
 }
 
 /*LE VS DE LA PAGE INDEX*/
-.vs-border {
+#vs-border {
   /*Les images restent dans leur position par rapport à leur encadrement appelé versus*/
   position: relative;
   width: 100%;
@@ -291,7 +291,7 @@ img {
   border-radius: 4em;
   margin-top:0.5em;
 }
-.vs-border img {
+#vs-border img {
   /*ici c'est pour que les images soient l'une par dessus l'autre a leur position 0*/
   position: absolute;
   inset: 0;
@@ -300,33 +300,33 @@ img {
   object-fit: cover;
 }
 /*Image de gauche*/
-.left { /*pour rogner l'image selon un polynome : haut-gauche, haut-droite, bas-droite,bas-gauche*/
+#left { /*pour rogner l'image selon un polynome : haut-gauche, haut-droite, bas-droite,bas-gauche*/
   clip-path: polygon(0 0, 50% 0, 30% 100%, 0 100%);
 }
-.left:hover {
+#left:hover {
   clip-path: polygon(0 0, 80% 0, 70% 100%, 0 100%);
   z-index: 20; /*met l'image au dessus de l'autre (axe z)*/
   transform: scale(1.1); /*effet de zoom*/
 }
 /*Image de droite*/
-.right {
+#right {
   clip-path: polygon(50% 0, 100% 0, 100% 100%, 30% 100%);
 }
-.right:hover {
+#right:hover {
   clip-path: polygon(30% 0, 100% 0, 100% 100%, 20% 100%);
   z-index: 20;
   transform: scale(1.1);
 }
 
 /*LE CARROUSEL DE FIELD OF MISTRIA*/
-.carrousel {
+#carrousel {
   width: 50%; /*pour pas que ce soit toute la largeur de page*/
   margin: auto; /* pour centrer le caroussel*/
   overflow: hidden; /*on cache les images qu'on veut pas activement montrer*/
   border-radius: 8em; /*on arrondi les bords*/
 }
 /*définir les slides*/
-.slides {
+#slides {
   display: flex;
   width: 500%; /*100% par image*/
   animation: autoplay 20s infinite;

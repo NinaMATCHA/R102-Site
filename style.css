@@ -25,28 +25,6 @@
   }
 }
 
-:root {
-  /*thème clair*/
-  --primary-color-light: #f5c211;
-  --background-light: #ffffffff;
-  --text-light: #00000000;
-
-  /*thème obscur*/
-  --primary-color-dark: #282437;
-
-  /* thème sakura*/
-  --primary-color-sakura: #ffb7c5;
-
-  /*defaut*/
-  --primary-color: var(--primary-color-light);
-  --background-color: var(--background-light);
-  --text-color: var(--text-light);
-}
-
-.dark {
-  --primary-color: var(--color-primary-light);
-}
-
 /*CONSTRUCTION DE LA PAGE*/
 html {
   background-color: #48524c;
@@ -108,10 +86,7 @@ header {
 
 /*PAGE d'ACCUEIL*/
 .index {
-  background-color:#1b302b;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-color:#292e2b;
 }
 /*les images cliquables*/
 .index ul {

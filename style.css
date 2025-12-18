@@ -13,13 +13,6 @@
     margin-left: 0;
   }
 
-  .title {
-    width: 80%;
-    margin-left: auto; /*pour centrer sans etre petit bug sur tel*/
-    margin-right: auto;
-    margin-top: 2em;
-  }
-
   .index ul {
     overflow-x: auto;
   }

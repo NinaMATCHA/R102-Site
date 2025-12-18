@@ -13,7 +13,7 @@
     margin-left: 0;
   }
 
-  #index ul {
+  .index ul {
     overflow-x: auto;
   }
   
@@ -85,18 +85,18 @@ header {
 }
 
 /*PAGE d'ACCUEIL*/
-#index {
+.index {
   background-color:#292e2b;
 }
 /*les images cliquables*/
-#index ul {
+.index ul {
     display: flex;
     justify-content: center;
     gap: 2em;
     list-style: none;
 }
 
-#index img {
+header.index img {
     width:10em;
     height: auto;
     display: block;
@@ -281,7 +281,7 @@ img {
 }
 
 /*LE VS DE LA PAGE INDEX*/
-#vs-border {
+.vs-border {
   /*Les images restent dans leur position par rapport à leur encadrement appelé versus*/
   position: relative;
   width: 100%;
@@ -291,7 +291,7 @@ img {
   border-radius: 4em;
   margin-top:0.5em;
 }
-#vs-border img {
+.vs-border img {
   /*ici c'est pour que les images soient l'une par dessus l'autre a leur position 0*/
   position: absolute;
   inset: 0;

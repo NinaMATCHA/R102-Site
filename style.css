@@ -16,10 +16,6 @@
   .index ul {
     overflow-x: auto;
   }
-
-  h1 {
-    font-size:1.8em;
-  }
   
   nav > ul > li {
     margin: 0;
@@ -162,7 +158,7 @@ header.index img {
 h1 {
   color: #e0c682;
   text-align: center;
-  font-size: 8em;
+  font-size: 3em;
   font-family: "Pixelify Sans";
   font-weight: lighter;
   margin: 0.5em;

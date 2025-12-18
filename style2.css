@@ -323,7 +323,6 @@ img {
 .carrousel {
   width: 50%; /*pour pas que ce soit toute la largeur de page*/
   margin: auto; /* pour centrer le caroussel*/
-  height: auto;
   overflow: hidden; /*on cache les images qu'on veut pas activement montrer*/
   border-radius: 2em; /*on arrondi les bords*/
 }
@@ -331,11 +330,12 @@ img {
 .slides {
   display: flex;
   width: 500%; /*100% par image*/
-  height: auto; /*on évite les déformations*/
   animation: autoplay 20s infinite;
 }
 /*à affecter au slide de manière individuelle*/
 .slide {
+  height:auto;
+  width:100%;
   display: flex;
   justify-content: center;
 }
@@ -343,7 +343,7 @@ img {
 .slide img {
   width: auto;
   height: 20em;
-  object-fit: cover;
+  object-fit: contain;
 }
 /*défilement des images*/
 @keyframes autoplay {

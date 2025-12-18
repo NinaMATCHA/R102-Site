@@ -175,7 +175,7 @@ h2 {
   color: #c5a059;
   text-align: center;
   font-size: 2.2em;
-  ont-family: 'Times New Roman', serif;
+  font-family: 'Times New Roman', serif;
   font-weight: lighter;
   padding-top: 0.2em;
   padding-bottom: 0.2em; /*padding pour que le fond ait de l'espace entre le texte et le bord*/
@@ -190,7 +190,7 @@ h3 {
   color: #ffffff;
   text-align: center;
   font-size: 1.5em;
-  ont-family: 'Times New Roman', serif;
+  font-family: 'Times New Roman', serif;
   font-weight: lighter;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(80, 80, 80, 1) 50%, rgba(255, 255, 255, 0) 100%);/*gradient realisé grace a cssgradient.io*/
   padding-top: 0.2em;
@@ -204,7 +204,7 @@ h3 {
 /*texte  et éléments de liste*/
 p, li {
   color: #ffffff;
-  ont-family: 'Times New Roman', serif;
+  font-family: 'Times New Roman', serif;
   text-align: justify;
   font-size: 1.2em;
   margin: 0;
